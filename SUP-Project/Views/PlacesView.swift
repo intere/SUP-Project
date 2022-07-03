@@ -71,33 +71,6 @@ extension PlacesView {
     }
 }
 
-extension PlacesView {
-    struct OtherPlacesScrollView: View {
-        @Binding var selectedPlace: Place
-        let places: [Place]
-
-        var body: some View {
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(places.indices, id: \.self) { index in
-                        let place = places[index]
-                        PlaceImage(place: place, rotation: false)
-                            .onTapGesture {
-                                selectedPlace = place
-                            }
-                    }
-                }
-                .padding(.leading)
-
-            }
-            .overlay(RoundedRectangle(cornerRadius: 25).stroke(.red))
-            .padding()
-            .frame(maxWidth: .infinity)
-        }
-    }
-}
-
-
 struct PlacesView_Previews: PreviewProvider {
 
     static var model = PreviewModel()
