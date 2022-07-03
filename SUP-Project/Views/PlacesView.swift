@@ -14,7 +14,7 @@ struct PlacesView: View {
     var body: some View {
         VStack {
             NavigationLink(destination: DetailView(location: selectedPlace)) {
-                LocationPhoto(photoName: selectedPlace.image)
+                PlaceImage(place: selectedPlace, rotation: true)
             }
             .padding(.horizontal)
 
@@ -81,26 +81,41 @@ extension PlacesView {
                 HStack {
                     ForEach(places.indices, id: \.self) { index in
                         let place = places[index]
-                        Image(place.image)
-                            .resizable()
-                            .frame(width: 100, height: 100, alignment: .center)
-                            .aspectRatio(1, contentMode: .fill)
+                        PlaceImage(place: place, rotation: false)
                             .onTapGesture {
                                 selectedPlace = place
                             }
                     }
                 }
                 .padding(.leading)
-            }
 
+            }
+            .overlay(RoundedRectangle(cornerRadius: 25).stroke(.red))
+            .padding()
+            .frame(maxWidth: .infinity)
         }
     }
 }
 
 
 struct PlacesView_Previews: PreviewProvider {
+
+    static var model = PreviewModel()
+
     static var previews: some View {
-        //        PlacesView(places: MapContentService().places, selectedPlace: MapContentService().places[0])
-        EmptyView()
+        Group {
+            PlacesView(places: model.places, selectedPlace: model.$selectedPlace).preferredColorScheme(.light)
+            PlacesView(places: model.places, selectedPlace: model.$selectedPlace).preferredColorScheme(.dark)
+        }
+    }
+
+    struct PreviewModel {
+        var places: [Place]
+        @State var selectedPlace: Place
+
+        init(places: [Place] = MapContentService().places) {
+            self.places = places
+            self.selectedPlace = places[0]
+        }
     }
 }

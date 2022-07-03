@@ -6,6 +6,24 @@
         "image": "http://www.denveroutdooradventure.com/uploads/3/4/9/2/34922260/1342525_1_orig.jpg",
         "sponsored": false,
         "overlay": true,
-        "details": ""
+        "details": "Sloan’s Lake sits on Sheridan Boulevard north of Colfax, and it’s a nice option for boaters who want to grab a bite to eat or a drink after a day on the lake in the neighboring Edgewater neighborhood (Providence At 5280 comes highly recommended by this writer).\n\n Note that motorized boating and sailing are not permitted on this lake, but standup paddle boarding, kayaking, and canoeing are."
+    },
+    {
+        "name": "McKay Lake",
+        "latitude": 39.953266080553064,
+        "longitude": -105.01263045319659,
+        "image": "https://coloradobirdingtrail.com/wp-content/uploads/2017/06/McKay-Lake.jpg",
+        "sponsored": false,
+        "overlay": true,
+        "details": "Boats are restricted to kayaks, canoes and belly boats. Paddle boards are prohibited."
+    },
+    {
+        "name": "Clear Lake",
+        "latitude": 39.669480231406475,
+        "longitude": -105.7016479415884,
+        "image": "https://www.uncovercolorado.com/wp-content/uploads/2021/03/clear-lake-guanella-pass-colorado2-1600x800-1.jpg",
+        "sponsored": false,
+        "overlay": true,
+        "details": "Sitting at 9,873 feet in elevation above Georgetown, Colorado, Clear Lake is a small reservoir that can be found along the scenic Guanella Pass Road in Clear Creek County. Only about 5 miles from Interstate 70, Clear Lake is a popular stop for overnight camping, fishing, or taking in the alpine views.  At Clear Lake, there is a small parking area, a few picnic tables and bathroom facilities available for use without a fee. The rugged terrain offers visitors a chance to take great photos and enjoy a handful of outdoor activities. The Georgetown-side of Guanella Pass lies within the Arapaho National Forest.  Non-motorized boats such as canoes, kayaks and stand up paddle boards are permitted on top of Clear Lake. Inflatable tubes, floaties and swimming are prohibited."
     }
 ]

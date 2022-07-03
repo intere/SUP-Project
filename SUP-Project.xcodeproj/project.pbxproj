@@ -13,7 +13,7 @@
 		36514D5B2871EA540076B7FA /* RoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D5A2871EA540076B7FA /* RoadView.swift */; };
 		36514D5D2871EBA10076B7FA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D5C2871EBA10076B7FA /* DetailView.swift */; };
 		36514D5F2871EBEA0076B7FA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D5E2871EBEA0076B7FA /* TitleView.swift */; };
-		36514D612871EC300076B7FA /* LocationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D602871EC300076B7FA /* LocationPhoto.swift */; };
+		36514D6428720B010076B7FA /* PlaceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D6328720B010076B7FA /* PlaceImage.swift */; };
 		3675E1132870A195000F6C96 /* SUP_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E1122870A195000F6C96 /* SUP_ProjectApp.swift */; };
 		3675E1152870A195000F6C96 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E1142870A195000F6C96 /* MapView.swift */; };
 		3675E1172870A196000F6C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3675E1162870A196000F6C96 /* Assets.xcassets */; };
@@ -51,8 +51,8 @@
 		36514D5A2871EA540076B7FA /* RoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadView.swift; sourceTree = "<group>"; };
 		36514D5C2871EBA10076B7FA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		36514D5E2871EBEA0076B7FA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		36514D602871EC300076B7FA /* LocationPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPhoto.swift; sourceTree = "<group>"; };
 		36514D622871ED9B0076B7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36514D6328720B010076B7FA /* PlaceImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceImage.swift; sourceTree = "<group>"; };
 		3675E10F2870A195000F6C96 /* SUP-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUP-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E1122870A195000F6C96 /* SUP_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectApp.swift; sourceTree = "<group>"; };
 		3675E1142870A195000F6C96 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				36514D5A2871EA540076B7FA /* RoadView.swift */,
 				36514D5C2871EBA10076B7FA /* DetailView.swift */,
 				36514D5E2871EBEA0076B7FA /* TitleView.swift */,
-				36514D602871EC300076B7FA /* LocationPhoto.swift */,
+				36514D6328720B010076B7FA /* PlaceImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,9 +332,9 @@
 				36514D572871E9440076B7FA /* ContentView.swift in Sources */,
 				36514D5F2871EBEA0076B7FA /* TitleView.swift in Sources */,
 				3675E13D2870A570000F6C96 /* Place.swift in Sources */,
+				36514D6428720B010076B7FA /* PlaceImage.swift in Sources */,
 				3675E1152870A195000F6C96 /* MapView.swift in Sources */,
 				3675E1132870A195000F6C96 /* SUP_ProjectApp.swift in Sources */,
-				36514D612871EC300076B7FA /* LocationPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

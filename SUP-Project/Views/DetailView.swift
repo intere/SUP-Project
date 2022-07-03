@@ -13,7 +13,7 @@ struct DetailView: View {
     var body: some View {
         VStack {
             TitleView(locationName: location.name)
-            LocationPhoto(photoName: location.image)
+            PlaceImage(place: location, rotation: true)
             ScrollView {
                 Text(location.details)
                     .font(.body)
@@ -33,6 +33,8 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(location: MapContentService().places[0])
+        Group {
+            DetailView(location: MapContentService().places[0])
+        }.padding()
     }
 }
