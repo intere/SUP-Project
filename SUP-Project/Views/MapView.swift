@@ -9,16 +9,14 @@ import MapKit
 import SwiftUI
 
 struct MapView: View {
-    @State private var region: MKCoordinateRegion
+    @State var place: Place
     @Environment(\.presentationMode) private var presentationMode
-
-    init(location: Place) {
-        _region = State(initialValue: location.region)
-    }
 
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $place.region, annotationItems: [place]) {
+                MapPin(coordinate: $0.location.coordinate)
+            }
             VStack {
                 HStack {
                     Button {
@@ -41,6 +39,10 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(location: MapContentService().places[0])
+        MapView(place: MapContentService().places[0])
     }
+}
+
+extension Place: Identifiable {
+    var id: String { self.name }
 }

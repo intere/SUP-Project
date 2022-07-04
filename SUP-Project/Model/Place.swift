@@ -15,7 +15,7 @@ final class Place: Codable {
     let details: String
     let overlay: Bool
     let location: CLLocation
-    let region: MKCoordinateRegion
+    var region: MKCoordinateRegion
     private let regionRadius: CLLocationDistance = 1000
 
     init(from decoder: Decoder) throws {

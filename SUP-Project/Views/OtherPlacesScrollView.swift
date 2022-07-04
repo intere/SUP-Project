@@ -17,6 +17,7 @@ struct OtherPlacesScrollView: View {
                 ForEach(places.indices, id: \.self) { index in
                     VStack {
                         Text(places[index].name)
+                            .font(.title2)
                         PlaceImage(place: places[index], rotation: false)
                     }.onTapGesture {
                         selectedPlace = places[index]
@@ -26,7 +27,7 @@ struct OtherPlacesScrollView: View {
             .padding(.leading)
 
         }
-        .overlay(RoundedRectangle(cornerRadius: 25).stroke(.red))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
         .padding()
         .frame(maxWidth: .infinity)
     }

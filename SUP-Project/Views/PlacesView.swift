@@ -42,7 +42,7 @@ extension PlacesView {
 
         var body: some View {
             VStack(spacing: 10) {
-                NavigationLink(destination: MapView(location: place)) {
+                NavigationLink(destination: MapView(place: place)) {
                     Label(
                         title: { Text("Find on Map")
                                 .foregroundColor(.white)

@@ -12,7 +12,7 @@ struct RoadView: View {
         ZStack {
             Color.gray
 
-            Image("road")
+            Image("rmnp-lake")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .opacity(0.3)
