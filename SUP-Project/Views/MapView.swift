@@ -16,7 +16,7 @@ struct MapView: View {
         ZStack {
             Map(coordinateRegion: $place.region, annotationItems: [place]) {
                 MapPin(coordinate: $0.location.coordinate)
-            }
+            }.edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Button {
@@ -25,14 +25,12 @@ struct MapView: View {
                         Image(systemName: "xmark.circle.fill")
                             .imageScale(.large)
                     }
-                    .padding(.top, 20)
                     Spacer()
                 }
                 .padding()
                 Spacer()
             }
         }
-        .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)
     }
 }
