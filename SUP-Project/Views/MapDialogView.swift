@@ -14,7 +14,8 @@ struct MapDialogView: View {
 
     var body: some View {
         ZStack {
-            MapPlaceView(place: place).edgesIgnoringSafeArea(.all)
+            MapPlaceView(viewModel: .init(), place: place)
+                .edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Button {

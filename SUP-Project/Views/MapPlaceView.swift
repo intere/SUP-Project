@@ -9,11 +9,11 @@ import MapKit
 import SwiftUI
 
 struct MapPlaceView: View {
-    @StateObject private var viewModel = ContentViewModel()
+    @StateObject var viewModel: ContentViewModel
     @State var place: Place
 
     var body: some View {
-        Map(coordinateRegion: $place.region, showsUserLocation: true, annotationItems: [place]) {
+        Map(coordinateRegion: $place.region, interactionModes: viewModel.interactionModes, showsUserLocation: true, annotationItems: [place]) {
             MapAnnotation(
                 coordinate: $0.location.coordinate,
                 content: {
@@ -33,13 +33,22 @@ struct MapPlaceView: View {
 
 struct MapPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        MapPlaceView(place: MapContentService().places[0])
+        MapPlaceView(viewModel: .init(), place: MapContentService().places[0])
     }
 }
 
 extension MapPlaceView {
     class ContentViewModel: NSObject, ObservableObject {
         var locationManager: CLLocationManager?
+        var allowsUserInteraction: Bool
+
+        var interactionModes: MapInteractionModes {
+            allowsUserInteraction ? [.all] : []
+        }
+
+        init(allowsUserInteraction: Bool = true) {
+            self.allowsUserInteraction = allowsUserInteraction
+        }
 
         func initializeLocationServices() {
             guard CLLocationManager.locationServicesEnabled() else {

@@ -30,7 +30,7 @@ struct DetailView: View {
                         RoundedRectangle(cornerRadius: 8).fill(.white.opacity((0.3))))
                     .padding()
                 NavigationLink(destination: MapDialogView(place: location)) {
-                    MapPlaceView(place: location)
+                    MapPlaceView(viewModel: .init(allowsUserInteraction: false), place: location)
                         .frame(maxWidth: .infinity, minHeight: 160)
                         .cornerRadius(8)
                         .padding()
