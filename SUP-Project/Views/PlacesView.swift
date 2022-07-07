@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(*, deprecated, message: "Use PlaceList instead")
 struct PlacesView: View {
     let places: [Place]
     @Binding var selectedPlace: Place
@@ -14,7 +15,7 @@ struct PlacesView: View {
     var body: some View {
         VStack {
             NavigationLink(destination: DetailView(location: selectedPlace)) {
-                PlaceImage(place: selectedPlace, rotation: true)
+                PlaceImage(model: .init(place: selectedPlace, rotation: true))
             }
             .padding(.horizontal)
 
@@ -42,7 +43,7 @@ extension PlacesView {
 
         var body: some View {
             VStack(spacing: 10) {
-                NavigationLink(destination: MapView(place: place)) {
+                NavigationLink(destination: MapDialogView(place: place)) {
                     Label(
                         title: { Text("Find on Map")
                                 .foregroundColor(.white)

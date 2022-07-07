@@ -8,21 +8,36 @@
 import SwiftUI
 
 struct DetailView: View {
-    private let location: Place
+    @State var location: Place
 
     var body: some View {
-        VStack {
-            TitleView(locationName: location.name)
-            PlaceImage(place: location, rotation: true)
-            ScrollView {
+        ScrollView {
+            VStack {
+                TitleView(locationName: location.name)
+                    .padding()
+                PlaceImage(model: .init(place: location, rotation: true))
+                    .padding()
+                LazyVGrid(columns: [.init(.flexible(minimum: 100))]) {
+                    AllowedView(place: location)
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
+                    DisallowedView(place: location)
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
+                }
                 Text(location.details)
                     .font(.body)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8).fill(.white.opacity((0.3))))
+                    .padding()
+                NavigationLink(destination: MapDialogView(place: location)) {
+                    MapPlaceView(place: location)
+                        .frame(maxWidth: .infinity, minHeight: 160)
+                        .cornerRadius(8)
+                        .padding()
+                }
             }
-            .padding(.top)
         }
-        .padding(.top, -60)
-        .padding(.horizontal)
-        .background(RoadView())
+        .background(PleasantBackgroundView())
     }
 
     init(location: Place) {

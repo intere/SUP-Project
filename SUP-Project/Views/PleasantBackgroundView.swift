@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoadView: View {
+struct PleasantBackgroundView: View {
     var body: some View {
         ZStack {
             Color.gray
@@ -21,8 +21,8 @@ struct RoadView: View {
     }
 }
 
-struct RoadView_Previews: PreviewProvider {
+struct PleasantBackgroundView_Previews: PreviewProvider {
     static var previews: some View {
-        RoadView()
+        PleasantBackgroundView()
     }
 }

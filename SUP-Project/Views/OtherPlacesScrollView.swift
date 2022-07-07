@@ -18,7 +18,7 @@ struct OtherPlacesScrollView: View {
                     VStack {
                         Text(places[index].name)
                             .font(.title2)
-                        PlaceImage(place: places[index], rotation: false)
+                        PlaceImage(model: .init(place: places[index], rotation: false))
                     }.onTapGesture {
                         selectedPlace = places[index]
                     }.padding()

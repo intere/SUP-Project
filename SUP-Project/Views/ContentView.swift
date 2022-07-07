@@ -18,8 +18,9 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            PlacesView(places: places, selectedPlace: $selectedPlace)
-                .background(RoadView())
+//            PlacesView(places: places, selectedPlace: $selectedPlace)
+            PlacesList(places: places, selectedPlace: $selectedPlace)
+                .background(PleasantBackgroundView())
                 .navigationBarHidden(true)
 
             Text("\(Image(systemName: "arrow.left")) Choose a SUP Place!")

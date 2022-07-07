@@ -8,7 +8,35 @@
 import Foundation
 import MapKit
 
-final class Place: Codable {
+enum Watercraft: String, Codable {
+    case paddleboard = "p"
+    case kayak = "k"
+    case canoe = "c"
+    case sailing = "s"
+
+    var title: String {
+        switch self {
+        case .paddleboard:
+            return "Paddleboards"
+        case .kayak:
+            return "Kayaks"
+        case .canoe:
+            return "Canoes"
+        case .sailing:
+            return "Sailboats"
+        }
+    }
+}
+
+enum WaterBodyType: String, Codable {
+    case lake = "l"
+    case pond = "p"
+    case river = "r"
+    case whitewater = "w"
+    case reservoir = "e"
+}
+
+class Place: Codable {
     let name: String
     let image: String
     let sponsored: Bool
@@ -16,9 +44,12 @@ final class Place: Codable {
     let overlay: Bool
     let location: CLLocation
     var region: MKCoordinateRegion
-    private let regionRadius: CLLocationDistance = 1000
+    let type: WaterBodyType?
+    let motorized: Bool?
+    let allowed: [Watercraft]?
+    let prohibited: [Watercraft]?
 
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKey.self)
         name = try values.decode(String.self, forKey: .name)
         image = try values.decode(String.self, forKey: .image)
@@ -28,7 +59,12 @@ final class Place: Codable {
         let latitude = try values.decode(Double.self, forKey: .latitude)
         let longitude = try values.decode(Double.self, forKey: .longitude)
         location = CLLocation(latitude: latitude, longitude: longitude)
-        region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: Constants.regionRadius,
+                                    longitudinalMeters: Constants.regionRadius)
+        type = try? values.decode(WaterBodyType.self, forKey: .type)
+        motorized = try? values.decode(Bool.self, forKey: .motorized)
+        allowed = try? values.decode([Watercraft].self, forKey: .allowed)
+        prohibited = try? values.decode([Watercraft].self, forKey: .prohibited)
     }
 
     func encode(to encoder: Encoder) throws {
@@ -40,6 +76,18 @@ final class Place: Codable {
         try container.encode(overlay, forKey: .overlay)
         try container.encode(location.coordinate.latitude, forKey: .latitude)
         try container.encode(location.coordinate.longitude, forKey: .longitude)
+        if let type = type {
+            try container.encode(type, forKey: .type)
+        }
+        if let motorized = motorized {
+            try container.encode(motorized, forKey: .motorized)
+        }
+        if let allowed = allowed {
+            try container.encode(allowed, forKey: .allowed)
+        }
+        if let prohibited = prohibited {
+            try container.encode(prohibited, forKey: .prohibited)
+        }
     }
 
     enum CodingKey: Swift.CodingKey {
@@ -50,7 +98,29 @@ final class Place: Codable {
         case overlay
         case latitude
         case longitude
+        case type
+        case motorized
+        case allowed
+        case prohibited
+    }
+
+    struct Constants {
+        static let regionRadius: CLLocationDistance = 1000
     }
 }
 
+extension Place: Identifiable {
+    var id: String { self.name }
+}
 
+// MARK: - Computed Properties
+
+extension Place {
+    var allowedWatercraft: [Watercraft] {
+        allowed ?? []
+    }
+
+    var prohibitedWatercraft: [Watercraft] {
+        prohibited ?? []
+    }
+}
