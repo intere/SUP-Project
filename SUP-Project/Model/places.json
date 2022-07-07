@@ -5,8 +5,6 @@
         "longitude": -105.04841804296503,
         "type": "l",
         "image": "http://www.denveroutdooradventure.com/uploads/3/4/9/2/34922260/1342525_1_orig.jpg",
-        "sponsored": false,
-        "overlay": true,
         "details": "Sloan’s Lake sits on Sheridan Boulevard north of Colfax, and it’s a nice option for boaters who want to grab a bite to eat or a drink after a day on the lake in the neighboring Edgewater neighborhood (Providence At 5280 comes highly recommended by this writer).\n\n Note that motorized boating and sailing are not permitted on this lake, but standup paddle boarding, kayaking, and canoeing are.",
         "allowed": ["p", "k", "c"],
         "prohibited": ["m", "s"]
@@ -17,8 +15,6 @@
         "longitude": -105.01263045319659,
         "type": "l",
         "image": "https://coloradobirdingtrail.com/wp-content/uploads/2017/06/McKay-Lake.jpg",
-        "sponsored": false,
-        "overlay": true,
         "details": "Boats are restricted to kayaks, canoes and belly boats. Paddle boards are prohibited.",
         "motorized": false,
         "allowed": ["k"],
@@ -30,8 +26,6 @@
         "longitude": -105.7016479415884,
         "type": "l",
         "image": "https://www.uncovercolorado.com/wp-content/uploads/2021/03/clear-lake-guanella-pass-colorado2-1600x800-1.jpg",
-        "sponsored": false,
-        "overlay": true,
         "details": "Sitting at 9,873 feet in elevation above Georgetown, Colorado, Clear Lake is a small reservoir that can be found along the scenic Guanella Pass Road in Clear Creek County. Only about 5 miles from Interstate 70, Clear Lake is a popular stop for overnight camping, fishing, or taking in the alpine views.  At Clear Lake, there is a small parking area, a few picnic tables and bathroom facilities available for use without a fee. The rugged terrain offers visitors a chance to take great photos and enjoy a handful of outdoor activities. The Georgetown-side of Guanella Pass lies within the Arapaho National Forest.  Non-motorized boats such as canoes, kayaks and stand up paddle boards are permitted on top of Clear Lake. Inflatable tubes, floaties and swimming are prohibited."
     },
     {
@@ -40,8 +34,6 @@
         "longitude": -106.06083437485576,
         "type": "e",
         "image": "https://lh5.googleusercontent.com/p/AF1QipOPq7Vb0cchE8mWSjACMisTA82NPoiKA54wBRkg=w408-h306-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "Completed in 1963, Dillon Reservoir has an earth-fill dam, 5,888 feet long by 231 feet above the Blue River streambed. The entire town of Dillon and a hydroelectric plant were relocated to build the dam, which diverts water from the Blue River Basin through the Harold D. Roberts Tunnel under the Continental Divide into the South Platte River Basin.",
         "motorized": false,
         "allowed": ["p", "k", "c", "s"]
@@ -52,8 +44,6 @@
         "longitude": -105.65163368836313,
         "type": "l",
         "image": "https://lh5.googleusercontent.com/p/AF1QipNEMWgBI6x9Ot-RTNKUpgDg--kPYbaUcG8U2Cl0=w408-h272-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "Set in Rocky Mountain National Park, this scenic high-altitude lake is popular for day hikes.",
         "motorized": false,
         "allowed": ["p", "k", "c", "s"]
@@ -64,8 +54,6 @@
         "longitude": -105.64823081785673,
         "type": "l",
         "image": "https://lh5.googleusercontent.com/p/AF1QipNlyVlpPqI_L3wrWkIrQ-nzn4S5CZp-EFUsruqr=w408-h306-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "Flanked by mountains & woods, this alpine lake is known for its scenic views & hiking trails.",
         "motorized": false,
         "prohibited": ["p", "k", "c", "s"]
@@ -76,8 +64,6 @@
         "longitude": -105.6591264436559,
         "type": "l",
         "image": "https://lh5.googleusercontent.com/p/AF1QipMjH2Iuki7Xu53MfIn6ChEXfTiIghRa0QogkhUn=w408-h272-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "Steep cliffs encircle this high-altitude lake along a hiking trail in Rocky Mountain National Park.",
         "motorized": false,
         "allowed": ["p", "k", "c", "s"]
@@ -88,8 +74,6 @@
         "longitude": -106.18011805311033,
         "type": "p",
         "image": "https://lh5.googleusercontent.com/p/AF1QipPtaJvzZbR9Sl-KVMHYbEDa-7pfjhuwkSrkIDA=w408-h306-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": ""
     },
     {
@@ -98,8 +82,6 @@
         "longitude": -106.16910409889243,
         "type": "e",
         "image": "https://lh5.googleusercontent.com/p/AF1QipO6xnksX8EjkOkpustCkCiWkBxGcdI5Bha-Mpl3=w426-h240-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "",
         "motorized": false
     },
@@ -109,8 +91,6 @@
         "longitude": -106.37896878179545,
         "type": "l",
         "image": "https://lh5.googleusercontent.com/p/AF1QipNcfOoS7A1F_Xbb1KJCeIQKwooEqy6cLD2BBRbR=w408-h272-k-no",
-        "sponsored": false,
-        "overlay": true,
         "details": "Five miles west of Leadville sits Turquoise Lake, one of Colorado’s favorite high-altitude recreation destinations. Dammed in the 19th century and named for the rare turquoise deposits found nearby, Turquoise Lake offers 1,800 acres or year-round recreational fun.",
         "allowed": ["p", "k", "c", "s"]
     }
