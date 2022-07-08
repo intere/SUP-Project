@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             PlacesList(theme: theme, places: places, selectedPlace: $selectedPlace)
-                .background(PleasantBackgroundView())
+                .background(PleasantBackgroundView().overlay(theme.contentOverlay))
                 .navigationBarHidden(true)
 
             Text("\(Image(systemName: "arrow.left")) Choose a SUP Place!")

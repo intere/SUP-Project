@@ -19,10 +19,10 @@ struct DetailView: View {
                 PlaceImage(model: .init(place: location, rotation: true))
                     .padding()
                 LazyVGrid(columns: [.init(.flexible(minimum: 100))]) {
-                    AllowedView(place: location)
-                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
-                    DisallowedView(place: location)
-                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
+                    AllowedView(theme: theme, place: location)
+                        .frame(maxWidth: .infinity)
+                    DisallowedView(theme: theme, place: location)
+                        .frame(maxWidth: .infinity)
                 }
                 Text(location.details)
                     .font(.body)
@@ -46,7 +46,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailView(theme: .init(), location: MapContentService().places[0])
+            DetailView(theme: .init(), location: MapContentService().places[1])
         }.padding()
     }
 }

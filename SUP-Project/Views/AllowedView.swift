@@ -15,17 +15,11 @@ struct TitleWithBulletsModel {
 
 struct TitleWithBulletListView: View {
     @Environment(\.colorScheme) var colorScheme
+    let theme: Theme
     @State var model: TitleWithBulletsModel
 
     var backgroundFill: Color {
-        switch colorScheme {
-        case .light:
-            return .gray.opacity(0.75)
-        case .dark:
-            return .black.opacity(0.5)
-        @unknown default:
-            fatalError()
-        }
+        theme.bulletBackgroundColor.opacity(0.8)
     }
 
     var body: some View {
@@ -35,7 +29,6 @@ struct TitleWithBulletListView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(model.title).font(.title3)
                     .foregroundColor(model.textColor)
-                    .shadow(color: .black.opacity(0.7), radius: 3, x: 1, y: 1)
                 ForEach(model.bullets, id: \.self) { bullet in
                     HStack {
                         Image(systemName: "circle.fill")
@@ -44,7 +37,6 @@ struct TitleWithBulletListView: View {
                             .foregroundColor(model.textColor)
                         Text(bullet)
                             .foregroundColor(model.textColor)
-                            .shadow(color: .black.opacity(0.7), radius: 3, x: 1, y: 1)
                     }.padding(0)
                 }
             }
@@ -58,36 +50,57 @@ struct TitleWithBulletListView: View {
 }
 
 struct DisallowedView: View {
+    let theme: Theme
     let place: Place
 
     var body: some View {
         TitleWithBulletListView(
-            model: .init(
+            theme: theme, model: .init(
                 title: "Prohibited Watercraft",
                 bullets: place.prohibitedWatercraft.map({$0.title}),
-                textColor: .red))
+                textColor: .appQuinary))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
     }
 }
 
 struct AllowedView: View {
+    let theme: Theme
     let place: Place
 
     var body: some View {
         TitleWithBulletListView(
+            theme: theme,
             model: .init(
                 title: "Permitted Watercraft",
                 bullets: place.allowedWatercraft.map({$0.title}),
-                textColor: .green))
+                textColor: .appPrimary))
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(.gray))
     }
 }
 
 struct AllowedView_Previews: PreviewProvider {
+    private static let theme = Theme()
     static var previews: some View {
-        Group {
-            AllowedView(place: MapContentService().places[3]).preferredColorScheme(.dark)
-            DisallowedView(place: MapContentService().places[0]).preferredColorScheme(.dark)
-            AllowedView(place: MapContentService().places[3]).preferredColorScheme(.light)
-            DisallowedView(place: MapContentService().places[0]).preferredColorScheme(.light)
-        }.background(PleasantBackgroundView())
+        VStack(spacing: 40) {
+            AllowedView(theme: theme, place: MapContentService().places[3])
+                .preferredColorScheme(.dark)
+                .padding()
+            DisallowedView(theme: theme, place: MapContentService().places[1])
+                .preferredColorScheme(.dark)
+                .padding()
+        }
+        .background(PleasantBackgroundView())
+        .padding()
+
+        VStack {
+            AllowedView(theme: theme, place: MapContentService().places[3])
+                .preferredColorScheme(.light)
+                .padding()
+            DisallowedView(theme: theme, place: MapContentService().places[1])
+                .preferredColorScheme(.light)
+                .padding()
+        }
+        .background(PleasantBackgroundView())
+        .padding()
     }
 }

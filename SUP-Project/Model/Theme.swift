@@ -10,14 +10,12 @@ import SwiftUI
 struct Theme {
     @Environment(\.colorScheme) var colorScheme
 
-    var navigationTextColor: Color {
-        switch colorScheme {
-        case .dark:
-            return .white
-        case .light:
-            return .black
-        @unknown default:
-            fatalError()
-        }
+    var isDarkMode: Bool {
+        colorScheme == .dark
     }
+
+    var contentOverlay: Color { .black.opacity(0.5) }
+    var navigationTextColor: Color { isDarkMode ? .white : .black }
+    var placeListTextColor: Color { .appPrimary }
+    var bulletBackgroundColor: Color { .appTextDark }
 }

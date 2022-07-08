@@ -23,10 +23,12 @@ struct PlacesList: View {
                     HStack(alignment: .center) {
                         Text(place.name)
                             .font(.title2)
+                            .foregroundColor(theme.placeListTextColor)
                         Spacer()
                         PlaceImage(model: .init(place: place, rotation: false, maxHeight: 40, emptyViewForMissing: true))
                     }
                     .padding([.leading, .trailing], 20)
+                    .padding([.top, .bottom], 4)
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
                     .onTapGesture {
