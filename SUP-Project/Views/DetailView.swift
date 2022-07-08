@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
+    var theme: Theme
     @State var location: Place
 
     var body: some View {
@@ -39,17 +40,13 @@ struct DetailView: View {
         }
         .background(PleasantBackgroundView())
     }
-
-    init(location: Place) {
-        self.location = location
-    }
 }
 
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailView(location: MapContentService().places[0])
+            DetailView(theme: .init(), location: MapContentService().places[0])
         }.padding()
     }
 }

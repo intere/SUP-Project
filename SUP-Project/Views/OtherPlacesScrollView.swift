@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+#warning("DO NOT USE")
+
+@available(*, deprecated, message: "Use the PlacesList")
 struct OtherPlacesScrollView: View {
     @Binding var selectedPlace: Place
     let places: [Place]

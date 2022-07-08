@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("DO NOT USE")
+
 @available(*, deprecated, message: "Use PlaceList instead")
 struct PlacesView: View {
     let places: [Place]
@@ -14,7 +16,7 @@ struct PlacesView: View {
 
     var body: some View {
         VStack {
-            NavigationLink(destination: DetailView(location: selectedPlace)) {
+            NavigationLink(destination: DetailView(theme: .init(), location: selectedPlace)) {
                 PlaceImage(model: .init(place: selectedPlace, rotation: true))
             }
             .padding(.horizontal)

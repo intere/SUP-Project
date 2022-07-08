@@ -37,6 +37,7 @@ enum WaterBodyType: String, Codable {
 }
 
 class Place: Codable {
+
     let name: String
     let image: String
     let details: String
@@ -46,6 +47,21 @@ class Place: Codable {
     let motorized: Bool?
     let allowed: [Watercraft]?
     let prohibited: [Watercraft]?
+    // TODO: allows dogs
+    // TODO: entrance cost?
+    // TODO: parking cost?
+
+    init(name: String, image: String, details: String, location: CLLocation, region: MKCoordinateRegion, type: WaterBodyType?, motorized: Bool?, allowed: [Watercraft]?, prohibited: [Watercraft]?) {
+        self.name = name
+        self.image = image
+        self.details = details
+        self.location = location
+        self.region = region
+        self.type = type
+        self.motorized = motorized
+        self.allowed = allowed
+        self.prohibited = prohibited
+    }
 
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKey.self)
