@@ -28,6 +28,7 @@
 		3675E1452871E548000F6C96 /* MapContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E1442871E548000F6C96 /* MapContentService.swift */; };
 		36A563642878774B00E24D83 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A563632878774B00E24D83 /* Theme.swift */; };
 		36A563672878B3B200E24D83 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A563662878B3B200E24D83 /* ColorExtensions.swift */; };
+		36A56369287B4E6F00E24D83 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36A56368287B4E6F00E24D83 /* README.md */; };
 		36AB94C82875DB3E005F39FE /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB94C72875DB3D005F39FE /* PlacesListView.swift */; };
 		36AB94CA2877972A005F39FE /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB94C92877972A005F39FE /* AddPlaceView.swift */; };
 		36AB94CD2877BCFA005F39FE /* MapChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB94CC2877BCFA005F39FE /* MapChooser.swift */; };
@@ -78,6 +79,7 @@
 		3675E1442871E548000F6C96 /* MapContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentService.swift; sourceTree = "<group>"; };
 		36A563632878774B00E24D83 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		36A563662878B3B200E24D83 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		36A56368287B4E6F00E24D83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		36AB94C72875DB3D005F39FE /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
 		36AB94C92877972A005F39FE /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
 		36AB94CC2877BCFA005F39FE /* MapChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChooser.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		3675E1062870A195000F6C96 = {
 			isa = PBXGroup;
 			children = (
+				36A56368287B4E6F00E24D83 /* README.md */,
 				3675E1112870A195000F6C96 /* SUP-Project */,
 				3675E1222870A197000F6C96 /* SUP-ProjectTests */,
 				3675E12C2870A197000F6C96 /* SUP-ProjectUITests */,
@@ -340,6 +343,7 @@
 			files = (
 				3675E13F2871E156000F6C96 /* places.json in Resources */,
 				3675E11A2870A197000F6C96 /* Preview Assets.xcassets in Resources */,
+				36A56369287B4E6F00E24D83 /* README.md in Resources */,
 				3675E1172870A196000F6C96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
