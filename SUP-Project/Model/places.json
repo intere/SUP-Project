@@ -33,7 +33,7 @@
         "latitude": 39.610617852590536,
         "longitude": -106.06083437485576,
         "type": "e",
-        "image": "https://lh5.googleusercontent.com/p/AF1QipOPq7Vb0cchE8mWSjACMisTA82NPoiKA54wBRkg=w408-h306-k-no",
+        "image": "https://uc164ba523e206a5300f7353f3ea.previews.dropboxusercontent.com/p/thumb/ABkZvMa0irUYFgoKB5y0MO81iVoXeeGpzRLSxZE8VPKN5XcIeyoNSStHm4thQe46TUeyL976AT2YGZhg_ng8Q91NjF202oNCIVKBeClgvv_vBxyfresRB0NS51OKqB8IlgXLyBQ4k4FKk6yF_AbdVaBmiSgXZeoCKq3zkwPAtlxlHv9hBOi07E-URZLzfHFXyoXnQVnbKvSv77SyfJXnDRrTI4qCQ508kJ2JS7oUSODN7j0qD7CIz7rkulFHTbqxmlnDbxlP-_mSozoX-aLR9D3-mwvBzH6hecVSc2dp0s_fEpqNEG6YJiMo1UUySoY-q2BGdOKVKj98-xyBojha61WDVTml1FETZw0JP9axdujNBqYBUL1Ey_Z6EBVvHNMm-l9b3KicZGYXu2Y4hBE1HxTt5taJt4y9ytjJla1en9_zuQ/p.jpeg",
         "details": "Completed in 1963, Dillon Reservoir has an earth-fill dam, 5,888 feet long by 231 feet above the Blue River streambed. The entire town of Dillon and a hydroelectric plant were relocated to build the dam, which diverts water from the Blue River Basin through the Harold D. Roberts Tunnel under the Continental Divide into the South Platte River Basin.",
         "motorized": false,
         "allowed": ["p", "k", "c", "s"]
@@ -90,8 +90,9 @@
         "latitude": 39.272947714620614,
         "longitude": -106.37896878179545,
         "type": "l",
-        "image": "https://lh5.googleusercontent.com/p/AF1QipNcfOoS7A1F_Xbb1KJCeIQKwooEqy6cLD2BBRbR=w408-h272-k-no",
+        "image": "https://uc016aa4f006cb7227275568ba34.previews.dropboxusercontent.com/p/thumb/ABkpL972nUMVDKhiyRw9CrwJj2u7LbG6alGJ_wcK0p9Z2PoMCSzntpVUj-dm44EhMsU-KE9IHmKwIQiDI5Ufll8xdlDochOEk32gLrnk5jTQdk-jSIgRSgoGUF4aEz4UpgmVfMqWi7Gyz2r5jtCmxhGxvd4qK1J83FOaTLctzPwi9Bxa7Axzq2JscChnWg6z0L1OCsSqbSlJj_JFbV8SdakimQvFqMF5HvFkjxlDI8qurGhKjoSo22vH0GlizH4XGox_UvHxq52HM6VZvB1hG1H5sYOSpC9mjvdS9U4gIyakJ9Cn4giZq4KC0URS9pFQVeL3dXAlrx0RQGBWQvXjfKzh__FCXouSivWRhSNg4Mvu0dyUDS7WDIeC2PFwUkU0sc5TFhRocZwxft5UtfzZIftwLduo_-7EjafpHJ4Efs5BNQ/p.jpeg",
         "details": "Five miles west of Leadville sits Turquoise Lake, one of Colorado’s favorite high-altitude recreation destinations. Dammed in the 19th century and named for the rare turquoise deposits found nearby, Turquoise Lake offers 1,800 acres or year-round recreational fun.",
+        "motorized": true,
         "allowed": ["p", "k", "c", "s"]
     },
     {

@@ -37,11 +37,11 @@ struct PlacesListView: View {
     @StateObject var model: PlacesListViewModel
 
     var body: some View {
+        NavigationLink(destination: DetailView(theme: theme, location: model.selectedPlace), tag: 1, selection: $model.showPlace) {
+            EmptyView()
+        }
         ScrollView {
             LazyVStack {
-                NavigationLink(destination: DetailView(theme: theme, location: model.selectedPlace), tag: 1, selection: $model.showPlace) {
-                    EmptyView()
-                }
                 ForEach(model.filtered) { place in
                     HStack(alignment: .center) {
                         Text(place.name)
@@ -55,8 +55,9 @@ struct PlacesListView: View {
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
                     .onTapGesture {
-                        self.model.selectedPlace = place
-                        self.model.showPlace = 1
+                        print("You tapped \(place.name)")
+                        model.selectedPlace = place
+                        model.showPlace = 1
                     }
                     Spacer()
                 }
