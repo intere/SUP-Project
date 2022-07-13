@@ -12,6 +12,7 @@ struct SUP_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(places: MapContentService().places)
+//            CreatePOIView(model: .init())
         }
     }
 }
