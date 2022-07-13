@@ -37,7 +37,7 @@ struct PlacesListView: View {
     @StateObject var model: PlacesListViewModel
 
     var body: some View {
-        NavigationLink(destination: DetailView(theme: theme, location: model.selectedPlace), tag: 1, selection: $model.showPlace) {
+        NavigationLink(destination: PlaceDetailView(theme: theme, location: model.selectedPlace), tag: 1, selection: $model.showPlace) {
             EmptyView()
         }
         ScrollView {

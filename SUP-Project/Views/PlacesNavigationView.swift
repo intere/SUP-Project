@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PlacesNavigationView.swift
 //  SUP-Project
 //
 //  Created by Eric Internicola on 7/3/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PlacesNavigationView: View {
     let theme = Theme()
     let places: [Place]
     @State private var selectedPlace: Place
@@ -33,7 +33,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(places: MapContentService().places).preferredColorScheme(.light)
-        ContentView(places: MapContentService().places).preferredColorScheme(.dark)
+        PlacesNavigationView(places: MapContentService().places).preferredColorScheme(.light)
+        PlacesNavigationView(places: MapContentService().places).preferredColorScheme(.dark)
     }
 }

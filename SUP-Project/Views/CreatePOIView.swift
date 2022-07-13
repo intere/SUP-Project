@@ -41,6 +41,7 @@ struct CreatePOIView: View {
             HStack {
                 Button {
                     model.savePoi()
+                    dismiss()
                 } label: {
                     Text("Save")
                 }

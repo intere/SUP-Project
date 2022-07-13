@@ -16,7 +16,7 @@ struct PlacesView: View {
 
     var body: some View {
         VStack {
-            NavigationLink(destination: DetailView(theme: .init(), location: selectedPlace)) {
+            NavigationLink(destination: PlaceDetailView(theme: .init(), location: selectedPlace)) {
                 PlaceImage(model: .init(place: selectedPlace, rotation: true))
             }
             .padding(.horizontal)
