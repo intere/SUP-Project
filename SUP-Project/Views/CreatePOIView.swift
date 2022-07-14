@@ -75,14 +75,14 @@ struct CreatePOIView: View {
 
 struct CreatePOIView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePOIView(theme: .init(), model: .init())
+        CreatePOIView(theme: .init(), model: .init(poiService: .init()))
     }
 }
 
 // MARK: - CreatePOIViewModel
 
 class CreatePOIViewModel: NSObject, ObservableObject {
-    let poiService = POIService()
+    let poiService: POIService
     var locationManager: CLLocationManager?
     @Published var isFetchingLocation = true
     @Published var name: String = "My Spot" {
@@ -101,14 +101,19 @@ class CreatePOIViewModel: NSObject, ObservableObject {
         }
     }
     @Published var error: Error?
-    @Published var region: MKCoordinateRegion = .init(center: .init(latitude: 0, longitude: 0), latitudinalMeters: 0, longitudinalMeters: 1000)
+    @Published var region: MKCoordinateRegion = .init(center: .init(latitude: 0, longitude: 0), latitudinalMeters: 0, longitudinalMeters: 1000) {
+        didSet {
+            location = CLLocation(latitude: region.center.latitude, longitude: region.center.longitude)
+        }
+    }
     @Published var annotations: [POI] = []
     private var poi: POI? {
         guard let location = location else { return nil }
         return POI(name: name, lat: location.coordinate.latitude, lon: location.coordinate.longitude, type: type)
     }
 
-    override init() {
+    init(poiService: POIService) {
+        self.poiService = poiService
         super.init()
         initializeLocationServices()
     }

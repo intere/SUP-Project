@@ -5,9 +5,10 @@
 //  Created by Eric Internicola on 7/12/22.
 //
 
+import Combine
 import Foundation
 
-class POIService {
+class POIService: ObservableObject {
     let defaults: UserDefaults
 
     var placesOfInterest: [POI] {
@@ -18,6 +19,7 @@ class POIService {
         set {
             let data = data(from: newValue)
             defaults.set(data, forKey: Constants.defaultsKey)
+            objectWillChange.send()
         }
     }
 

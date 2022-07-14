@@ -20,7 +20,7 @@ struct POIListView: View {
             }
             .buttonStyle(CommonButtonStyle.primary)
             .sheet(isPresented: $model.showingSheet) {
-                CreatePOIView(theme: theme, model: .init())
+                CreatePOIView(theme: theme, model: .init(poiService: model.poiService))
             }
             .padding()
 
@@ -29,7 +29,8 @@ struct POIListView: View {
                     HStack {
                         poi.type.image
                         Text(poi.name)
-                    }
+                            .padding(.leading, 2)
+                    }.foregroundColor(.appTextDark)
                 }
             }
             Spacer()
@@ -46,11 +47,7 @@ struct POIListView_Previews: PreviewProvider {
 }
 
 class POIListViewModel: ObservableObject {
-    let poiService = POIService()
-    @Published var pois: [POI]
+    @Published var poiService = POIService()
+    var pois: [POI] { poiService.placesOfInterest }
     @Published var showingSheet = false
-
-    init() {
-        pois = poiService.placesOfInterest
-    }
 }
