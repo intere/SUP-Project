@@ -179,8 +179,8 @@
 		3675E1112870A195000F6C96 /* SUP-Project */ = {
 			isa = PBXGroup;
 			children = (
-				36A563652878B38D00E24D83 /* Extensions */,
 				36514D622871ED9B0076B7FA /* Info.plist */,
+				36A563652878B38D00E24D83 /* Extensions */,
 				36514D552871E9380076B7FA /* Views */,
 				3675E1462871E573000F6C96 /* Services */,
 				3675E1402871E382000F6C96 /* Model */,
