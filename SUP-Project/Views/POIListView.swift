@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct POIListView: View {
+    let theme: Theme
     @ObservedObject var model = POIListViewModel()
 
     var body: some View {
@@ -16,9 +17,15 @@ struct POIListView: View {
                 model.showingSheet.toggle()
             } label: {
                 Text("Add POI")
-            }.sheet(isPresented: $model.showingSheet) {
-                CreatePOIView(model: .init())
+                    .foregroundColor(.appPrimary)
             }
+            .background(Color.appTirtiary)
+            .buttonStyle(.bordered)
+            .padding()
+            .sheet(isPresented: $model.showingSheet) {
+                CreatePOIView(theme: theme, model: .init())
+            }
+
 
             LazyVStack {
                 ForEach(model.pois) { poi in
@@ -30,13 +37,14 @@ struct POIListView: View {
             }
             Spacer()
         }
+        .background(PleasantBackgroundView())
         .padding()
     }
 }
 
 struct POIListView_Previews: PreviewProvider {
     static var previews: some View {
-        POIListView()
+        POIListView(theme: .init())
     }
 }
 

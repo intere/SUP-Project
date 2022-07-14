@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
+    let theme: Theme
 
     var body: some View {
         TabView {
             PlacesNavigationView(places: MapContentService().places)
                 .tabItem {
-                    Label("Spots", systemImage: "list.dash")
+                    Label("Spots", image: "PlaceList")
                 }
-            POIListView()
+            POIListView(theme: theme)
                 .tabItem {
-                    Label("POIs", systemImage: "square.and.pencil")
+                    Label("POIs", image: "POIList")
                 }
         }
     }
@@ -26,6 +27,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(theme: .init())
     }
 }

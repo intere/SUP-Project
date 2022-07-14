@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct POITypePicker: View {
+    let theme: Theme
     @Binding var selected: POIType
 
     var body: some View {
@@ -15,11 +16,24 @@ struct POITypePicker: View {
             ForEach(POIType.allCases, id: \.self) { poi in
                 HStack {
                     Text(poi.description)
+                        .foregroundColor(theme.poiTextColor)
                     poi.image
+                        .renderingMode(.template)
+                        .foregroundColor(theme.poiTextColor)
                 }
             }
         }
+        .accentColor(theme.poiTextColor)
         .pickerStyle(.automatic)
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .fill(theme.poiBackgroundColor)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(theme.poiBackgroundColor)
+        )
     }
 }
 
@@ -27,7 +41,7 @@ struct POITypePicker_Previews: PreviewProvider {
     static var model = PreviewModel()
 
     static var previews: some View {
-        POITypePicker(selected: model.$selected)
+        POITypePicker(theme: .init(), selected: model.$selected)
     }
 
     struct PreviewModel {

@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct SUP_ProjectApp: App {
+    let theme = Theme()
+
     var body: some Scene {
         WindowGroup {
-            MainView()
-//            ContentView(places: MapContentService().places)
-//            CreatePOIView(model: .init())
+            MainView(theme: theme)
         }
     }
 }

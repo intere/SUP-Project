@@ -11,13 +11,12 @@ struct PleasantBackgroundView: View {
     var body: some View {
         ZStack {
             Color.gray
-
             Image("rmnp-lake")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .opacity(0.3)
         }
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea()
     }
 }
 

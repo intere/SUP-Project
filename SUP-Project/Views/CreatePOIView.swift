@@ -8,57 +8,84 @@
 import MapKit
 import SwiftUI
 
+// MARK: - CreatePOIView
+
 struct CreatePOIView: View {
     @Environment(\.dismiss) var dismiss
+    let theme: Theme
     @ObservedObject var model: CreatePOIViewModel
 
     var body: some View {
         VStack {
-            Text("Add Place Of Interest").font(.title)
-            HStack {
-                Text("POI Name")
-                TextField("Name", text: $model.name)
-                    .textFieldStyle(.roundedBorder)
-            }
-            POITypePicker(selected: $model.type)
-            if model.isFetchingLocation {
-                ProgressView()
-            } else if let error = model.error {
-                Text("ERROR: \(error.localizedDescription)")
-            } else {
-                Map(coordinateRegion: $model.region, annotationItems: model.annotations) { item in
-                    MapAnnotation(
-                        coordinate: item.location.coordinate,
-                        content: {
-                            item.type.image
-                                .foregroundColor(.red)
-                        }
+            VStack {
+                Text("Add Place Of Interest")
+                    .font(.title)
+                    .foregroundColor(theme.placeListTextColor)
+                HStack {
+                    Text("POI Name")
+                        .foregroundColor(theme.placeListTextColor)
+                    TextField("Name", text: $model.name)
+                        .textFieldStyle(.roundedBorder)
+                }
+                POITypePicker(theme: theme, selected: $model.type)
+                if model.isFetchingLocation {
+                    ProgressView()
+                        .foregroundColor(theme.placeListTextColor)
+                } else if let error = model.error {
+                    Text("ERROR: \(error.localizedDescription)")
+                        .foregroundColor(theme.placeListTextColor)
+                } else {
+                    Map(coordinateRegion: $model.region, annotationItems: model.annotations) { item in
+                        MapAnnotation(
+                            coordinate: item.location.coordinate,
+                            content: {
+                                item.type.image
+                                    .foregroundColor(theme.poiTextColor)
+                            }
+                        )
+                    }
+                    .cornerRadius(8)
+                    .frame(maxWidth: .infinity, maxHeight: 300)
+                }
+                HStack {
+                    Button {
+                        model.savePoi()
+                        dismiss()
+                    } label: {
+                        Text("Save")
+                            .foregroundColor(theme.poiTextColor)
+                    }
+                    .buttonStyle(.bordered)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(theme.poiBackgroundColor)
                     )
-                }
-                .cornerRadius(8)
-                .frame(maxWidth: .infinity, maxHeight: 300)
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancel")
+                            .foregroundColor(theme.poiTextColor)
+                    }
+                    .buttonStyle(.bordered)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(theme.poiBackgroundColor)
+                    )
+                    
+                }.padding(.top, 16)
             }
-            HStack {
-                Button {
-                    model.savePoi()
-                    dismiss()
-                } label: {
-                    Text("Save")
-                }
-                .buttonStyle(.bordered)
-                Button {
-                    dismiss()
-                } label: {
-                    Text("Cancel")
-                }.buttonStyle(.bordered)
-            }.padding(.top, 16)
-        }.padding()
+            .padding()
+        }
+        .background(PleasantBackgroundView())
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
+// MARK: - Preview
+
 struct CreatePOIView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePOIView(model: .init())
+        CreatePOIView(theme: .init(), model: .init())
     }
 }
 
