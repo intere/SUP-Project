@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  PlaceDetailView.swift
 //  SUP-Project
 //
 //  Created by Eric Internicola on 7/3/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct PlaceDetailView: View {
     var theme: Theme
     @State var location: Place
 
@@ -46,7 +46,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailView(theme: .init(), location: MapContentService().places[1])
+            PlaceDetailView(theme: .init(), location: MapContentService().places[1])
         }.padding()
     }
 }

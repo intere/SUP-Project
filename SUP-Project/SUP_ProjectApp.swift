@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SUP_ProjectApp: App {
+    let theme = Theme()
+
     var body: some Scene {
         WindowGroup {
-            ContentView(places: MapContentService().places)
+            MainView(theme: theme)
         }
     }
 }

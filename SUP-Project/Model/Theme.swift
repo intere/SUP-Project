@@ -18,4 +18,6 @@ struct Theme {
     var navigationTextColor: Color { isDarkMode ? .white : .black }
     var placeListTextColor: Color { .appPrimary }
     var bulletBackgroundColor: Color { .appTextDark }
+    var poiTextColor: Color { .appQuinary }
+    var poiBackgroundColor: Color { .appTextDark }
 }

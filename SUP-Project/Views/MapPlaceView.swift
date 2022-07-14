@@ -17,10 +17,11 @@ struct MapPlaceView: View {
             MapAnnotation(
                 coordinate: $0.location.coordinate,
                 content: {
-                    Image(systemName: "drop.circle.fill").foregroundColor(.red)
-                    .onTapGesture(count: 1) {
-                        print("You tapped me")
-                    }
+                    Image(systemName: "drop.circle.fill")
+                        .foregroundColor(.red)
+                        .onTapGesture(count: 1) {
+                            print("You tapped me")
+                        }
                 }
             )
         }
