@@ -8,6 +8,11 @@
 import SwiftUI
 
 extension Color {
+    
+    init(hex: Int) {
+        self.init(hex)
+    }
+
     init(_ hex: Int) {
         let red = (hex & 0xff0000) >> 16
         let green = (hex & 0xff00) >> 8

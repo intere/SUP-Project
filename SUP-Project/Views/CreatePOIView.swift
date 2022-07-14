@@ -53,25 +53,15 @@ struct CreatePOIView: View {
                         dismiss()
                     } label: {
                         Text("Save")
-                            .foregroundColor(theme.poiTextColor)
                     }
-                    .buttonStyle(.bordered)
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(theme.poiBackgroundColor)
-                    )
+                    .buttonStyle(CommonButtonStyle.primary)
                     Button {
                         dismiss()
                     } label: {
                         Text("Cancel")
-                            .foregroundColor(theme.poiTextColor)
                     }
-                    .buttonStyle(.bordered)
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(theme.poiBackgroundColor)
-                    )
-                    
+                    .buttonStyle(CommonButtonStyle.default)
+
                 }.padding(.top, 16)
             }
             .padding()

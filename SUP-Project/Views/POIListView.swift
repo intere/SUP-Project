@@ -17,15 +17,12 @@ struct POIListView: View {
                 model.showingSheet.toggle()
             } label: {
                 Text("Add POI")
-                    .foregroundColor(.appPrimary)
             }
-            .background(Color.appTirtiary)
-            .buttonStyle(.bordered)
-            .padding()
+            .buttonStyle(CommonButtonStyle.primary)
             .sheet(isPresented: $model.showingSheet) {
                 CreatePOIView(theme: theme, model: .init())
             }
-
+            .padding()
 
             LazyVStack {
                 ForEach(model.pois) { poi in

@@ -24,12 +24,7 @@ struct PlaceDetailView: View {
                     DisallowedView(theme: theme, place: location)
                         .frame(maxWidth: .infinity)
                 }
-                Text(location.details)
-                    .font(.body)
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8).fill(.white.opacity((0.3))))
-                    .padding()
+                CommonTextView(text: location.details, model: .lightGray)
                 NavigationLink(destination: MapDialogView(place: location)) {
                     MapPlaceView(viewModel: .init(allowsUserInteraction: false), place: location)
                         .frame(maxWidth: .infinity, minHeight: 160)
