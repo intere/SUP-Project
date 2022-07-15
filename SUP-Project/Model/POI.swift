@@ -9,6 +9,7 @@ import Foundation
 import MapKit
 
 struct POI: Codable {
+    let uuid: UUID
     let name: String
     let lat: CLLocationDegrees
     let lon: CLLocationDegrees

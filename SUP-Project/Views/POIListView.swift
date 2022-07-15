@@ -24,13 +24,25 @@ struct POIListView: View {
             }
             .padding()
 
-            LazyVStack {
+            List {
                 ForEach(model.pois) { poi in
                     HStack {
                         poi.type.image
+                            .renderingMode(.template)
+                            .foregroundColor(theme.poiListColor)
                         Text(poi.name)
+                            .foregroundColor(theme.poiListColor)
                             .padding(.leading, 2)
-                    }.foregroundColor(.appTextDark)
+                    }
+                    .padding(.bottom, 4)
+                    .swipeActions {
+                        Button {
+                            model.remove(poi)
+                        } label: {
+                            Text("Delete")
+                        }
+                        .buttonStyle(CommonButtonStyle.danger)
+                    }
                 }
             }
             Spacer()
@@ -48,6 +60,11 @@ struct POIListView_Previews: PreviewProvider {
 
 class POIListViewModel: ObservableObject {
     @Published var poiService = POIService()
-    var pois: [POI] { poiService.placesOfInterest }
     @Published var showingSheet = false
+    var pois: [POI] { poiService.placesOfInterest }
+
+    func remove(_ poi: POI) {
+        poiService.remove(poi: poi)
+        objectWillChange.send()
+    }
 }

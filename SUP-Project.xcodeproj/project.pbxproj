@@ -141,9 +141,17 @@
 			path = Deprecated;
 			sourceTree = "<group>";
 		};
+		36458D1528819D23003ED4C6 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		36514D552871E9380076B7FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36458D1528819D23003ED4C6 /* ViewModifiers */,
 				36047793287F171000A70CA7 /* Deprecated */,
 				36AB94CB2877BCEB005F39FE /* Components */,
 				3675E1142870A195000F6C96 /* MapDialogView.swift */,

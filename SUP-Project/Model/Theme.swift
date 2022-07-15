@@ -20,4 +20,5 @@ struct Theme {
     var bulletBackgroundColor: Color { .appTextDark }
     var poiTextColor: Color { .appQuinary }
     var poiBackgroundColor: Color { .appTextDark }
+    var poiListColor: Color { .appQuaternary }
 }

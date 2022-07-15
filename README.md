@@ -13,6 +13,8 @@
     - [x] UserDefaults Persistence
     - [x] Ability to add one
 * Theme
-    - [ ] Buttons
+    - [x] Buttons
     - [ ] Text
+* Caching
+    - [ ] Image Caching
 

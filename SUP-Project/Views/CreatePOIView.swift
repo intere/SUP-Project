@@ -109,7 +109,7 @@ class CreatePOIViewModel: NSObject, ObservableObject {
     @Published var annotations: [POI] = []
     private var poi: POI? {
         guard let location = location else { return nil }
-        return POI(name: name, lat: location.coordinate.latitude, lon: location.coordinate.longitude, type: type)
+        return POI(uuid: .init(), name: name, lat: location.coordinate.latitude, lon: location.coordinate.longitude, type: type)
     }
 
     init(poiService: POIService) {

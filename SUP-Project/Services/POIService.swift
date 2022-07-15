@@ -29,6 +29,13 @@ class POIService: ObservableObject {
 
     func add(poi: POI) {
         placesOfInterest.append(poi)
+        objectWillChange.send()
+    }
+
+    func remove(poi: POI) {
+        guard let index = placesOfInterest.firstIndex(where: { $0.uuid == poi.uuid }) else { return }
+        placesOfInterest.remove(at: index)
+        objectWillChange.send()
     }
 
     struct Constants {
