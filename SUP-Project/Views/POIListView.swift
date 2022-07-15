@@ -47,7 +47,7 @@ struct POIListView: View {
             }
             Spacer()
         }
-        .background(PleasantBackgroundView())
+        .background(theme.appBackground)
         .padding()
     }
 }

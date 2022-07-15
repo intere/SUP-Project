@@ -89,7 +89,7 @@ struct AllowedView_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
                 .padding()
         }
-        .background(PleasantBackgroundView())
+        .background(theme.appBackground)
         .padding()
 
         VStack {
@@ -100,7 +100,7 @@ struct AllowedView_Previews: PreviewProvider {
                 .preferredColorScheme(.light)
                 .padding()
         }
-        .background(PleasantBackgroundView())
+        .background(theme.appBackground)
         .padding()
     }
 }

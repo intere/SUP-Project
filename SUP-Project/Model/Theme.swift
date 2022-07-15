@@ -14,6 +14,8 @@ struct Theme {
         colorScheme == .dark
     }
 
+    var appBackground: Color { .appLightGray }
+
     var contentOverlay: Color { .black.opacity(0.5) }
     var navigationTextColor: Color { isDarkMode ? .white : .black }
     var placeListTextColor: Color { .appPrimary }

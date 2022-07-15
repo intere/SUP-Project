@@ -66,7 +66,7 @@ struct CreatePOIView: View {
             }
             .padding()
         }
-        .background(PleasantBackgroundView())
+        .background(theme.appBackground)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

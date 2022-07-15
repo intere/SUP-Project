@@ -33,7 +33,7 @@ struct PlaceDetailView: View {
                 }
             }
         }
-        .background(PleasantBackgroundView())
+        .background(theme.appBackground)
     }
 }
 

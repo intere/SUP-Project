@@ -20,8 +20,7 @@ struct PlacesNavigationView: View {
     var body: some View {
         NavigationView {
             PlacesListView(theme: theme, model: PlacesListViewModel(places: places, selectedPlace: selectedPlace))
-                .background(
-                    PleasantBackgroundView()
+                .background(theme.appBackground
                         .overlay(theme.contentOverlay)
                 )
                 .navigationBarHidden(true)
