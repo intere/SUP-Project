@@ -26,7 +26,7 @@ class POIServiceTests: XCTestCase {
     }
 
     func testSetAndGet() throws {
-        let poi = POI(name: "test", lat: 4, lon: 7, type: .parking)
+        let poi = POI(uuid: .init(), name: "test", lat: 4, lon: 7, type: .parking)
         subject.placesOfInterest = [poi]
         XCTAssertEqual(1, subject.placesOfInterest.count)
 
@@ -45,7 +45,7 @@ class POIServiceTests: XCTestCase {
 
     func testNumerousReadsAndWrites() throws {
         (0...100).forEach { value in
-            let poi = POI(name: "test", lat: CLLocationDegrees(value), lon: CLLocationDegrees(value), type: .parking)
+            let poi = POI(uuid: .init(), name: "test", lat: CLLocationDegrees(value), lon: CLLocationDegrees(value), type: .parking)
             subject.add(poi: poi)
             XCTAssertEqual(value + 1, subject.placesOfInterest.count)
 
