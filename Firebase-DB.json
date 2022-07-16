@@ -1,0 +1,1208 @@
+{
+  "places": [
+    {
+      "id": "0a3dc580-493f-43a9-b2dd-399fc5992c5f",
+      "name": "Sloan's Lake",
+      "latitude": 39.7493655216225,
+      "longitude": -105.04841804296503,
+      "type": "l",
+      "image": "http://www.denveroutdooradventure.com/uploads/3/4/9/2/34922260/1342525_1_orig.jpg",
+      "details": "Sloan’s Lake sits on Sheridan Boulevard north of Colfax, and it’s a nice option for boaters who want to grab a bite to eat or a drink after a day on the lake in the neighboring Edgewater neighborhood (Providence At 5280 comes highly recommended by this writer).\n\n Note that motorized boating and sailing are not permitted on this lake, but standup paddle boarding, kayaking, and canoeing are.",
+      "allowed": [
+        "p",
+        "k",
+        "c"
+      ],
+      "prohibited": [
+        "m",
+        "s"
+      ]
+    },
+    {
+      "id": "8e423e33-f26c-4e71-b8ad-896bf013e36d",
+      "name": "McKay Lake",
+      "latitude": 39.953266080553064,
+      "longitude": -105.01263045319659,
+      "type": "l",
+      "image": "https://coloradobirdingtrail.com/wp-content/uploads/2017/06/McKay-Lake.jpg",
+      "details": "Boats are restricted to kayaks, canoes and belly boats. Paddle boards are prohibited.",
+      "motorized": false,
+      "allowed": [
+        "k"
+      ],
+      "prohibited": [
+        "p"
+      ]
+    },
+    {
+      "id": "cde81df5-9611-45f5-ac8c-d9e9d770dcb1",
+      "name": "Clear Lake",
+      "latitude": 39.669480231406475,
+      "longitude": -105.7016479415884,
+      "type": "l",
+      "image": "https://www.uncovercolorado.com/wp-content/uploads/2021/03/clear-lake-guanella-pass-colorado2-1600x800-1.jpg",
+      "details": "Sitting at 9,873 feet in elevation above Georgetown, Colorado, Clear Lake is a small reservoir that can be found along the scenic Guanella Pass Road in Clear Creek County. Only about 5 miles from Interstate 70, Clear Lake is a popular stop for overnight camping, fishing, or taking in the alpine views.  At Clear Lake, there is a small parking area, a few picnic tables and bathroom facilities available for use without a fee. The rugged terrain offers visitors a chance to take great photos and enjoy a handful of outdoor activities. The Georgetown-side of Guanella Pass lies within the Arapaho National Forest.  Non-motorized boats such as canoes, kayaks and stand up paddle boards are permitted on top of Clear Lake. Inflatable tubes, floaties and swimming are prohibited."
+    },
+    {
+      "id": "fbb1d940-f136-4339-a1e6-68b40f341847",
+      "name": "Dillon Reservoir",
+      "latitude": 39.610617852590536,
+      "longitude": -106.06083437485576,
+      "type": "e",
+      "image": "https://user-images.githubusercontent.com/2284832/178858421-83963490-55e3-4d04-9421-4551bb8b21c3.png",
+      "details": "Completed in 1963, Dillon Reservoir has an earth-fill dam, 5,888 feet long by 231 feet above the Blue River streambed. The entire town of Dillon and a hydroelectric plant were relocated to build the dam, which diverts water from the Blue River Basin through the Harold D. Roberts Tunnel under the Continental Divide into the South Platte River Basin.",
+      "motorized": false,
+      "allowed": [
+        "p",
+        "k",
+        "c",
+        "s"
+      ]
+    },
+    {
+      "id": "ec070f96-615b-43dd-8219-a19867520b73",
+      "name": "Nymph Lake",
+      "latitude": 40.31034398862835,
+      "longitude": -105.65163368836313,
+      "type": "l",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipNEMWgBI6x9Ot-RTNKUpgDg--kPYbaUcG8U2Cl0=w408-h272-k-no",
+      "details": "Set in Rocky Mountain National Park, this scenic high-altitude lake is popular for day hikes.",
+      "motorized": false,
+      "allowed": [
+        "p",
+        "k",
+        "c",
+        "s"
+      ]
+    },
+    {
+      "id": "a25fc48b-a668-4498-84cd-f5bf8dea6dfe",
+      "name": "Bear Lake",
+      "latitude": 40.31348107495411,
+      "longitude": -105.64823081785673,
+      "type": "l",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipNlyVlpPqI_L3wrWkIrQ-nzn4S5CZp-EFUsruqr=w408-h306-k-no",
+      "details": "Flanked by mountains & woods, this alpine lake is known for its scenic views & hiking trails.",
+      "motorized": false,
+      "prohibited": [
+        "p",
+        "k",
+        "c",
+        "s"
+      ]
+    },
+    {
+      "id": "64d3aa5e-b497-4887-b8e6-a6518157f468",
+      "name": "Dream Lake",
+      "latitude": 40.30944696344592,
+      "longitude": -105.6591264436559,
+      "type": "l",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipMjH2Iuki7Xu53MfIn6ChEXfTiIghRa0QogkhUn=w408-h272-k-no",
+      "details": "Steep cliffs encircle this high-altitude lake along a hiking trail in Rocky Mountain National Park.",
+      "motorized": false,
+      "allowed": [
+        "p",
+        "k",
+        "c",
+        "s"
+      ]
+    },
+    {
+      "id": "bc9e4be4-32c7-4ccc-b9b5-43f36b5fb566",
+      "name": "Mayflower Tailings Pond",
+      "latitude": 39.435243564680526,
+      "longitude": -106.18011805311033,
+      "type": "p",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipPtaJvzZbR9Sl-KVMHYbEDa-7pfjhuwkSrkIDA=w408-h306-k-no",
+      "details": ""
+    },
+    {
+      "id": "67149332-0255-43a3-890d-7fd4622b579e",
+      "name": "Clinton Gulch Dam Reservoir",
+      "latitude": 39.41219693984971,
+      "longitude": -106.16910409889243,
+      "type": "e",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipO6xnksX8EjkOkpustCkCiWkBxGcdI5Bha-Mpl3=w426-h240-k-no",
+      "details": "",
+      "motorized": false
+    },
+    {
+      "id": "a7789575-1a3a-45bd-9218-942e0c811790",
+      "name": "Turquoise Lake",
+      "latitude": 39.272947714620614,
+      "longitude": -106.37896878179545,
+      "type": "l",
+      "image": "https://user-images.githubusercontent.com/2284832/178858548-99626234-79d9-4018-8dd8-854dadf2e1d7.png",
+      "details": "Five miles west of Leadville sits Turquoise Lake, one of Colorado’s favorite high-altitude recreation destinations. Dammed in the 19th century and named for the rare turquoise deposits found nearby, Turquoise Lake offers 1,800 acres or year-round recreational fun.",
+      "motorized": true,
+      "allowed": [
+        "p",
+        "k",
+        "c",
+        "s"
+      ]
+    },
+    {
+      "id": "fe7d5f70-5cc6-4971-a2d3-388cdc103f08",
+      "name": "Acascosa Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "93e83dde-8380-4af7-9626-57b12dadd3af",
+      "name": "Antero Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "dd718a01-83ee-457b-9460-760d2cd96211",
+      "name": "Aurora Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ed2338e0-598b-4660-b19b-92c4f2a3c78b",
+      "name": "Barbour Ponds",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "46001f53-6a00-4189-b140-0f7d6e2c10c0",
+      "name": "Barker Meadow Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "a85d713d-b490-4ee5-9ec9-175bb977a0a9",
+      "name": "Barr Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "8ec1bf51-5d15-4b5d-8fd7-731bd21ac468",
+      "name": "Bear Creek Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "4eb466a9-f56b-46ff-b611-4cccf3ee2172",
+      "name": "Bierstadt Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "0eec8f64-f711-457f-b6f4-1809b4bbfc97",
+      "name": "Bison Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ee1758bc-9753-48c0-b2e8-a846ab47f1d8",
+      "name": "Blue Mesa Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "0cd9fcd8-783a-4e16-8e37-f49d8490f4c3",
+      "name": "Bonham Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ee0014ec-e866-4a50-aada-07872454040d",
+      "name": "Boulder Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "7aeb68a9-da67-4185-841b-ae99cf145bc5",
+      "name": "Boyd Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "b0607d99-8eaa-4b7f-94a1-e14d6df07c9d",
+      "name": "Carter Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e7de1757-3bbc-4d73-a9f2-5e61f9badd4e",
+      "name": "Chambers Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "771eb7e1-71be-4279-a4b9-37be664a9162",
+      "name": "Chatfield Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "19371854-b0a9-407c-9921-d703beeff084",
+      "name": "Cherry Creek Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "446b9437-be41-4735-ba14-039b4430cc04",
+      "name": "Crater Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "0db2665c-1754-4d6a-9548-3dcc062d0d64",
+      "name": "Cheesman Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "6cc6a0cc-d8c0-4f13-9b34-6d15c2fffb79",
+      "name": "Crawford Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "800805e7-68ad-44b3-8e70-35e8dcf046de",
+      "name": "Crystal Creek Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ceef8318-315c-49ce-9053-fb41ed19cc36",
+      "name": "Crystal Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ca031c98-30e4-48a7-91f1-b0ba50f32997",
+      "name": "Dawson Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "98318c1a-71f4-4820-a2d1-1cbb68793b92",
+      "name": "Deep Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "cd297730-7d72-4280-aaaf-554c57543d9b",
+      "name": "Deep Ward Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "12e2efaa-d17b-4b2e-b247-f2040ad3f4df",
+      "name": "Delaney Butte Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "441fcf2e-c221-445c-93c8-8451da047267",
+      "name": "DeWeese Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "f0cd4c30-05d9-4359-a5e0-d7a3cbf825b3",
+      "name": "East Portal Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e835d895-933e-4e30-8ad1-c7052d05027e",
+      "name": "Echo Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "0aeec0c4-e365-4e97-a2a0-08d643777161",
+      "name": "Eleven Mile Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "336b8f7f-471b-4222-aca6-105835eff0c2",
+      "name": "Elkhead Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "de26e541-d318-499b-b1be-b58a88f841bd",
+      "name": "Emerald Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "91f48775-af5f-4182-b376-3c795f93084d",
+      "name": "Lake Estes",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "fa913c3d-0d0e-4b9e-a1d3-b051ba1efe8a",
+      "name": "Fern Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "57d88fbd-f1cf-477b-826a-4fef18be7723",
+      "name": "Flatiron Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "bacfd1c0-7208-4cb9-aa7a-438f063d3679",
+      "name": "Fruitgrowers Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "7fe3cdbf-4213-4367-8014-2b8e8dc7366c",
+      "name": "Grand Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "152871ff-7c3b-4652-8605-3b35cddb13c8",
+      "name": "Grass Valley Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "4876ed8f-1cf2-43d4-9d7c-d7a037661bf3",
+      "name": "Green Mountain Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "946fa04f-fdf7-4c7f-a439-bd8376e24aff",
+      "name": "Gross Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "47f36eac-004c-4628-8ba0-8e0ed30a0a43",
+      "name": "Hanging Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "9b1b7c68-b9e7-4a80-9604-6deaf7c3330e",
+      "name": "Harker Park Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "45c6dc79-bcbb-45be-9d68-0aa5cacf15ba",
+      "name": "Harvey Gap Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "2b4cd237-5861-4860-95cf-52ee7c512169",
+      "name": "Haynach Lakes",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "50ed4466-733f-4a78-ae44-a1b3ef609a9d",
+      "name": "Horsetooth Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "07eac5ab-86db-4bf3-83cf-2b9649c6232c",
+      "name": "Jackson Lake State Park (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "c45ce91f-1ecf-49fe-9201-aed281249c6e",
+      "name": "John Martin Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "15b05c9b-f8d9-408e-838f-5c9b37c74168",
+      "name": "Kenney Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "6464f8bf-2cf7-493e-90e7-8efad9919757",
+      "name": "La Jara Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "63e4800b-58de-46fc-935e-0676c36bdd71",
+      "name": "Lake Avery",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "607205b6-7d27-4ca2-9b08-1cddcc36b327",
+      "name": "Lake Dillon",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "1d516e08-3e8f-4660-8236-403a08f1611f",
+      "name": "Lake Estes",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "fbb44860-51c5-434c-b2f2-72385578deed",
+      "name": "Lake George (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "16c1d879-841f-4799-aa6c-8090b5b4400a",
+      "name": "Lake Granby",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "31f7277e-0201-4cc4-9c2e-6a0bddfe1118",
+      "name": "Lake Isabel (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "6a5d6472-7943-44cf-81a7-b2b923d8ee05",
+      "name": "Lake John (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "b3d5ddd2-9584-42d1-8bf4-605b13239054",
+      "name": "Lake Meredith (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "c787819d-288a-4a7d-ab75-8f482d47c7a4",
+      "name": "Lake Pueblo",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "c49fbdb5-c4d6-4233-af6d-75ea7c2ebf9d",
+      "name": "Lake Maloya",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "c9e67afc-c4ee-4672-b689-b829aa4800b0",
+      "name": "Lake Rhoda",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e875cbcb-a1d7-4f98-a3c2-58b91af29575",
+      "name": "Lake San Cristobal",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "2e93b95d-be1f-471d-a5e2-c8fc7b69c931",
+      "name": "Lemon Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "96bcaeb2-7271-43dc-bd6b-3d6d6597d85c",
+      "name": "Lizard Lake (Gunnison County)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "b35c247c-5633-4c2b-86bc-08b4c71316d9",
+      "name": "Maroon Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "f8fe542a-3de5-4351-82d3-a4eaf9a5a0c6",
+      "name": "Marston Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "d66f9478-8196-4cdc-9c17-d89f926869d5",
+      "name": "Marys Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "62c33cb4-0516-46c1-b278-091459d3c1d4",
+      "name": "McPhee Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "6f83a977-9d10-457b-b471-daaf43f638fc",
+      "name": "Meadow Creek Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "cc95518c-bf3e-4808-b4d7-69b3f92da82e",
+      "name": "Miramonte Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "4db9134e-6fbe-4391-8a83-962789c70ff7",
+      "name": "Monarch Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "3f34080d-8282-4099-a21f-757e154524bf",
+      "name": "Montgomery Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "5bf25bd7-2e92-46b2-9b54-c8835e360993",
+      "name": "Morrow Point Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "15e673c6-f301-4bb4-a303-51e930bdca17",
+      "name": "Mount Elbert Forebay",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "61cec61a-fb7a-44ef-b5d1-ba0c9a25e533",
+      "name": "Mountain Home Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "db2df78d-a991-4443-951b-917ac1255086",
+      "name": "Murphy Lake (Grand County, Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "2119fa51-d69c-4512-b3ee-fcb46f07cda2",
+      "name": "Navajo Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "47b12743-b2d3-4181-8260-d348a882741d",
+      "name": "North Michigan Creek Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "090c6b0c-7308-4180-9876-e33e420bf3d3",
+      "name": "O'Haver Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "5a51fc18-9692-4cd0-89db-2450dc6d5bf0",
+      "name": "Pacific Tarn",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "8ad9a1f8-59cd-4d8b-b221-3595a46d8d84",
+      "name": "Paonia Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e2bf6013-e6bf-4cd2-8601-b97d06ac42af",
+      "name": "Pearl Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "76ef421a-a8e4-431c-9712-b4269bccd939",
+      "name": "Pinewood Lake (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "831bd933-6eec-443d-9d68-6a2ea2b6e388",
+      "name": "Platoro Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "84f5f8a0-c9d1-499d-8d18-6278720a3a7a",
+      "name": "Poudre Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "5e4bc820-d473-4842-9759-7b9b18be5c0d",
+      "name": "Pueblo Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "aba3ba97-d77b-48a2-888e-bfb64129de47",
+      "name": "Quincy Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "007890a9-6a0b-469f-8bae-53fb2fde0b79",
+      "name": "Ralph White Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "da3a8767-e5dc-4287-b5b4-6c3360235280",
+      "name": "Ralston Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "9966e160-9c4d-4c76-a6fb-acf06197c9e3",
+      "name": "Rampart Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "57d57eb3-ce6b-4f13-8f61-b088599019ff",
+      "name": "Ridgway Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "28a31fed-ed9f-4ba4-b959-ad76a3d6d599",
+      "name": "Rifle Gap Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "d4eaa991-3c8b-4183-8208-bc58474af03d",
+      "name": "Ruedi Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "505392fc-1b62-433b-afe6-1dfdc82a9b80",
+      "name": "Rueter–Hess Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "b7c24473-5694-4658-97f7-c6d5fa780bdb",
+      "name": "Runyon Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "df372f1e-c3a8-4c4f-8de3-91088b49d72b",
+      "name": "San Luis Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "def83876-ff9a-4325-b490-3b0af755ee06",
+      "name": "Sanchez Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "af6eba62-c869-4036-bce5-a83e6109955d",
+      "name": "Seaman Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "8d68d1c6-37bb-4a65-9913-c6161e636bb9",
+      "name": "Shadow Mountain Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "3acac432-6886-4402-b7c5-fb55531dff92",
+      "name": "Silver Jack Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "44d82db6-95f8-4a31-a5bc-d8d2f46fc3cc",
+      "name": "Smith Reservoir (Costilla County, Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "7d9999ae-05ad-4c39-8e6d-a3220dd79af7",
+      "name": "Snowdrift Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "7a9414b0-665e-4e6c-b864-ed5ea6b30bfc",
+      "name": "Stagecoach Dam",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "d1f5eba2-f490-44ff-b087-96eda62e5cf4",
+      "name": "Standley Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "89b43cc7-9572-4b08-b8b9-dc753b89be42",
+      "name": "Steamboat Lake State Park",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "7afa3e79-738c-47ea-993f-6053230bd789",
+      "name": "Sweitzer Lake State Park",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "eaa9cb5b-e0f0-48fb-9498-24f1e9c8ec7b",
+      "name": "Summit Lake (Clear Creek County, Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e69406a2-44b9-436f-bc00-32452093369e",
+      "name": "Sylvan Lake State Park",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "e9ac226c-d43e-471c-94c8-41dc2421cb56",
+      "name": "Taylor Park Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "9d3ad364-0259-4a2c-a02c-424213e2f3bd",
+      "name": "Terrace Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ce5f95a2-e4d4-4e38-bba6-f90dfea10117",
+      "name": "Trappers Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "d62a39a7-75dd-4394-8860-4e640b331123",
+      "name": "Trinidad Lake",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "9d68e159-7e80-46c6-a1f3-8be541a7e631",
+      "name": "Twin Lakes (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "a4c1b8db-6995-490b-b2d9-bfded821e0fc",
+      "name": "Vallecito Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "ce0d6ea0-6f78-41be-aec9-ec6d037264f8",
+      "name": "Vega Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "1b26e8bd-e6f1-4398-8526-95512603ed18",
+      "name": "Williams Fork Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "74afc04b-1801-4060-b2c6-e09b0812ff74",
+      "name": "Willow Creek Dam (Colorado)",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "2cb70c01-4350-4ad3-aec4-7f41502c180c",
+      "name": "Windy Gap Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    },
+    {
+      "id": "88f61038-347c-44b7-9879-2c476556cd16",
+      "name": "Wolford Mountain Reservoir",
+      "latitude": 0,
+      "longitude": 0,
+      "type": "",
+      "image": "",
+      "details": ""
+    }
+  ]
+}
