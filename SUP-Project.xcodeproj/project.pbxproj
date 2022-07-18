@@ -13,6 +13,8 @@
 		3604779728804EE500A70CA7 /* CommonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604779628804EE500A70CA7 /* CommonButtonStyle.swift */; };
 		3604779928804F5300A70CA7 /* CommonImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604779828804F5300A70CA7 /* CommonImageButton.swift */; };
 		3604779B288050F500A70CA7 /* CommonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604779A288050F500A70CA7 /* CommonTextView.swift */; };
+		360677CA2884DCF0003D7175 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360677C92884DCEE003D7175 /* AccountService.swift */; };
+		360677CE2884E100003D7175 /* AccountServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360677CD2884E100003D7175 /* AccountServiceTests.swift */; };
 		36458D192882F0EF003ED4C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36458D182882F0EF003ED4C6 /* GoogleService-Info.plist */; };
 		36458D1C2882F2D6003ED4C6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 36458D1B2882F2D6003ED4C6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		36458D1E2882F2D6003ED4C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 36458D1D2882F2D6003ED4C6 /* FirebaseAuth */; };
@@ -36,8 +38,6 @@
 		3675E1172870A196000F6C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3675E1162870A196000F6C96 /* Assets.xcassets */; };
 		3675E11A2870A197000F6C96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3675E1192870A197000F6C96 /* Preview Assets.xcassets */; };
 		3675E1242870A197000F6C96 /* SUP_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E1232870A197000F6C96 /* SUP_ProjectTests.swift */; };
-		3675E12E2870A197000F6C96 /* SUP_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E12D2870A197000F6C96 /* SUP_ProjectUITests.swift */; };
-		3675E1302870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E12F2870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift */; };
 		3675E13D2870A570000F6C96 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E13C2870A570000F6C96 /* Place.swift */; };
 		3675E13F2871E156000F6C96 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 3675E13E2871E156000F6C96 /* places.json */; };
 		3675E1432871E3BD000F6C96 /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E1422871E3BD000F6C96 /* PlaceTests.swift */; };
@@ -64,13 +64,6 @@
 			remoteGlobalIDString = 3675E10E2870A195000F6C96;
 			remoteInfo = "SUP-Project";
 		};
-		3675E12A2870A197000F6C96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3675E1072870A195000F6C96 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3675E10E2870A195000F6C96;
-			remoteInfo = "SUP-Project";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +73,8 @@
 		3604779628804EE500A70CA7 /* CommonButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButtonStyle.swift; sourceTree = "<group>"; };
 		3604779828804F5300A70CA7 /* CommonImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonImageButton.swift; sourceTree = "<group>"; };
 		3604779A288050F500A70CA7 /* CommonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextView.swift; sourceTree = "<group>"; };
+		360677C92884DCEE003D7175 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		360677CD2884E100003D7175 /* AccountServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServiceTests.swift; sourceTree = "<group>"; };
 		36458D182882F0EF003ED4C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36458D2B2882F603003ED4C6 /* PlacesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDatabase.swift; sourceTree = "<group>"; };
 		36458D2D2882F66D003ED4C6 /* PlacesDatabaesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDatabaesTest.swift; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 		3675E1192870A197000F6C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3675E11F2870A197000F6C96 /* SUP-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E1232870A197000F6C96 /* SUP_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectTests.swift; sourceTree = "<group>"; };
-		3675E1292870A197000F6C96 /* SUP-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E12D2870A197000F6C96 /* SUP_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectUITests.swift; sourceTree = "<group>"; };
 		3675E12F2870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3675E13C2870A570000F6C96 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -136,13 +130,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3675E11C2870A197000F6C96 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3675E1262870A197000F6C96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,7 +185,6 @@
 			children = (
 				3675E10F2870A195000F6C96 /* SUP-Project.app */,
 				3675E11F2870A197000F6C96 /* SUP-ProjectTests.xctest */,
-				3675E1292870A197000F6C96 /* SUP-ProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +257,7 @@
 				3675E1442871E548000F6C96 /* MapContentService.swift */,
 				36A5636E287DABC100E24D83 /* POIService.swift */,
 				36458D2B2882F603003ED4C6 /* PlacesDatabase.swift */,
+				360677C92884DCEE003D7175 /* AccountService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -288,6 +275,7 @@
 			children = (
 				36A56371287DADC500E24D83 /* POIServiceTests.swift */,
 				36458D2D2882F66D003ED4C6 /* PlacesDatabaesTest.swift */,
+				360677CD2884E100003D7175 /* AccountServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -353,24 +341,6 @@
 			productReference = 3675E11F2870A197000F6C96 /* SUP-ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3675E1282870A197000F6C96 /* SUP-ProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3675E1392870A197000F6C96 /* Build configuration list for PBXNativeTarget "SUP-ProjectUITests" */;
-			buildPhases = (
-				3675E1252870A197000F6C96 /* Sources */,
-				3675E1262870A197000F6C96 /* Frameworks */,
-				3675E1272870A197000F6C96 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3675E12B2870A197000F6C96 /* PBXTargetDependency */,
-			);
-			name = "SUP-ProjectUITests";
-			productName = "SUP-ProjectUITests";
-			productReference = 3675E1292870A197000F6C96 /* SUP-ProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -386,10 +356,7 @@
 					};
 					3675E11E2870A197000F6C96 = {
 						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 3675E10E2870A195000F6C96;
-					};
-					3675E1282870A197000F6C96 = {
-						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1330;
 						TestTargetID = 3675E10E2870A195000F6C96;
 					};
 				};
@@ -412,7 +379,6 @@
 			targets = (
 				3675E10E2870A195000F6C96 /* SUP-Project */,
 				3675E11E2870A197000F6C96 /* SUP-ProjectTests */,
-				3675E1282870A197000F6C96 /* SUP-ProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,13 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3675E11D2870A197000F6C96 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3675E1272870A197000F6C96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,6 +435,7 @@
 				36047790287F11D700A70CA7 /* POITypePicker.swift in Sources */,
 				36047792287F164F00A70CA7 /* MainView.swift in Sources */,
 				36AB94C82875DB3E005F39FE /* PlacesListView.swift in Sources */,
+				360677CA2884DCF0003D7175 /* AccountService.swift in Sources */,
 				36AB94CA2877972A005F39FE /* AddPlaceView.swift in Sources */,
 				36A563642878774B00E24D83 /* Theme.swift in Sources */,
 			);
@@ -490,15 +450,7 @@
 				3675E1242870A197000F6C96 /* SUP_ProjectTests.swift in Sources */,
 				36514D542871E6A60076B7FA /* MapContentServiceTests.swift in Sources */,
 				3675E1432871E3BD000F6C96 /* PlaceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3675E1252870A197000F6C96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3675E12E2870A197000F6C96 /* SUP_ProjectUITests.swift in Sources */,
-				3675E1302870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift in Sources */,
+				360677CE2884E100003D7175 /* AccountServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,11 +461,6 @@
 			isa = PBXTargetDependency;
 			target = 3675E10E2870A195000F6C96 /* SUP-Project */;
 			targetProxy = 3675E1202870A197000F6C96 /* PBXContainerItemProxy */;
-		};
-		3675E12B2870A197000F6C96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3675E10E2870A195000F6C96 /* SUP-Project */;
-			targetProxy = 3675E12A2870A197000F6C96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,15 +646,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 268S5GJFWZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUP-Project.app/SUP-Project";
@@ -719,11 +673,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 268S5GJFWZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-ProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -731,42 +691,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUP-Project.app/SUP-Project";
-			};
-			name = Release;
-		};
-		3675E13A2870A197000F6C96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 268S5GJFWZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-ProjectUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SUP-Project";
-			};
-			name = Debug;
-		};
-		3675E13B2870A197000F6C96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 268S5GJFWZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-ProjectUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SUP-Project";
 			};
 			name = Release;
 		};
@@ -796,15 +720,6 @@
 			buildConfigurations = (
 				3675E1372870A197000F6C96 /* Debug */,
 				3675E1382870A197000F6C96 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3675E1392870A197000F6C96 /* Build configuration list for PBXNativeTarget "SUP-ProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3675E13A2870A197000F6C96 /* Debug */,
-				3675E13B2870A197000F6C96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
