@@ -47,11 +47,30 @@ class Place: Codable {
     let motorized: Bool?
     let allowed: [Watercraft]?
     let prohibited: [Watercraft]?
-    // TODO: allows dogs
-    // TODO: entrance cost?
-    // TODO: parking cost?
+    let familyFriendly: Bool?
+    let allowsDogs: Bool?
+    let parkingFeesUsd: Double?
+    let entryFees: Double?
+    let requiresHiking: Bool?
+    let externalLinks: [Link]?
+    let weatherLinks: [Link]?
 
-    init(name: String, image: String, details: String, location: CLLocation, region: MKCoordinateRegion, type: WaterBodyType?, motorized: Bool?, allowed: [Watercraft]?, prohibited: [Watercraft]?) {
+    init(name: String,
+         image: String,
+         details: String,
+         location: CLLocation,
+         region: MKCoordinateRegion,
+         type: WaterBodyType?,
+         motorized: Bool?,
+         allowed: [Watercraft]?,
+         prohibited: [Watercraft]?,
+         familyFriendly: Bool?,
+         allowsDogs: Bool?,
+         parkingFeesUsd: Double?,
+         entryFees: Double?,
+         requiresHiking: Bool?,
+         externalLinks: [Link]?,
+         weatherLinks: [Link]?) {
         self.name = name
         self.image = image
         self.details = details
@@ -61,6 +80,13 @@ class Place: Codable {
         self.motorized = motorized
         self.allowed = allowed
         self.prohibited = prohibited
+        self.familyFriendly = familyFriendly
+        self.allowsDogs = allowsDogs
+        self.parkingFeesUsd = parkingFeesUsd
+        self.entryFees = entryFees
+        self.requiresHiking = requiresHiking
+        self.externalLinks = externalLinks
+        self.weatherLinks = weatherLinks
     }
 
     required init(from decoder: Decoder) throws {
@@ -77,6 +103,13 @@ class Place: Codable {
         motorized = try? values.decode(Bool.self, forKey: .motorized)
         allowed = try? values.decode([Watercraft].self, forKey: .allowed)
         prohibited = try? values.decode([Watercraft].self, forKey: .prohibited)
+        familyFriendly = try? values.decode(Bool.self, forKey: .familyFriendly)
+        allowsDogs = try? values.decode(Bool.self, forKey: .allowsDogs)
+        parkingFeesUsd = try? values.decode(Double.self, forKey: .parkingFeesUsd)
+        entryFees = try? values.decode(Double.self, forKey: .entryFees)
+        requiresHiking = try? values.decode(Bool.self, forKey: .requiresHiking)
+        externalLinks = try? values.decode([Link].self, forKey: .externalLinks)
+        weatherLinks = try? values.decode([Link].self, forKey: .weatherLinks)
     }
 
     func encode(to encoder: Encoder) throws {
@@ -98,6 +131,27 @@ class Place: Codable {
         if let prohibited = prohibited {
             try container.encode(prohibited, forKey: .prohibited)
         }
+        if let familyFriendly = familyFriendly {
+            try container.encode(familyFriendly, forKey: .familyFriendly)
+        }
+        if let allowsDogs = allowsDogs {
+            try container.encode(allowsDogs, forKey: .allowsDogs)
+        }
+        if let parkingFeesUsd = parkingFeesUsd {
+            try container.encode(parkingFeesUsd, forKey: .parkingFeesUsd)
+        }
+        if let entryFees = entryFees {
+            try container.encode(entryFees, forKey: .entryFees)
+        }
+        if let requiresHiking = requiresHiking {
+            try container.encode(requiresHiking, forKey: .requiresHiking)
+        }
+        if let externalLinks = externalLinks {
+            try container.encode(externalLinks, forKey: .externalLinks)
+        }
+        if let weatherLinks = weatherLinks {
+            try container.encode(weatherLinks, forKey: .weatherLinks)
+        }
     }
 
     enum CodingKey: Swift.CodingKey {
@@ -112,6 +166,18 @@ class Place: Codable {
         case motorized
         case allowed
         case prohibited
+        case familyFriendly
+        case allowsDogs
+        case parkingFeesUsd
+        case entryFees
+        case requiresHiking
+        case externalLinks
+        case weatherLinks
+    }
+
+    struct Link: Codable {
+        let text: String
+        let url: String
     }
 
     struct Constants {

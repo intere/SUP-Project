@@ -2,13 +2,13 @@
 
 ### TODO List
 * Place
-    - [ ] Family Friendly
-    - [ ] Allows Dogs
-    - [ ] Parking fees
-    - [ ] Entry fees
-    - [ ] Requires hiking
-    - [ ] Links to external references
-    - [ ] Weather Links
+    - [x] Family Friendly
+    - [x] Allows Dogs
+    - [x] Parking fees
+    - [x] Entry fees
+    - [x] Requires hiking
+    - [x] Links to external references
+    - [x] Weather Links
 * POI
     - [x] UserDefaults Persistence
     - [x] Ability to add one
@@ -16,5 +16,5 @@
     - [x] Buttons
     - [ ] Text
 * Caching
-    - [ ] Image Caching
+    - [x] Image Caching
 

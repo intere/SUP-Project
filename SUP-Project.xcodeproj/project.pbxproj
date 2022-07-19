@@ -93,8 +93,7 @@
 		3675E1192870A197000F6C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3675E11F2870A197000F6C96 /* SUP-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E1232870A197000F6C96 /* SUP_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectTests.swift; sourceTree = "<group>"; };
-		3675E12D2870A197000F6C96 /* SUP_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectUITests.swift; sourceTree = "<group>"; };
-		3675E12F2870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3675E1292870A197000F6C96 /* SUP-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E13C2870A570000F6C96 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3675E13E2871E156000F6C96 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		3675E1422871E3BD000F6C96 /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
@@ -175,7 +174,6 @@
 				36458D182882F0EF003ED4C6 /* GoogleService-Info.plist */,
 				3675E1112870A195000F6C96 /* SUP-Project */,
 				3675E1222870A197000F6C96 /* SUP-ProjectTests */,
-				3675E12C2870A197000F6C96 /* SUP-ProjectUITests */,
 				3675E1102870A195000F6C96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -220,15 +218,6 @@
 				3675E1232870A197000F6C96 /* SUP_ProjectTests.swift */,
 			);
 			path = "SUP-ProjectTests";
-			sourceTree = "<group>";
-		};
-		3675E12C2870A197000F6C96 /* SUP-ProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3675E12D2870A197000F6C96 /* SUP_ProjectUITests.swift */,
-				3675E12F2870A197000F6C96 /* SUP_ProjectUITestsLaunchTests.swift */,
-			);
-			path = "SUP-ProjectUITests";
 			sourceTree = "<group>";
 		};
 		3675E1402871E382000F6C96 /* Model */ = {
@@ -451,6 +440,13 @@
 				36514D542871E6A60076B7FA /* MapContentServiceTests.swift in Sources */,
 				3675E1432871E3BD000F6C96 /* PlaceTests.swift in Sources */,
 				360677CE2884E100003D7175 /* AccountServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3675E1252870A197000F6C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

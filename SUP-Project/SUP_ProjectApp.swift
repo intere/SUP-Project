@@ -13,6 +13,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
         FirebaseApp.configure()
+        URLCache.shared.diskCapacity = 1_000_000_000 // ~1GB disk cache space
         return true
     }
 }
