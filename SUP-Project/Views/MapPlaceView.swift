@@ -9,6 +9,7 @@ import MapKit
 import SwiftUI
 
 struct MapPlaceView: View {
+    let logger: Logging = Logger.shared
     @StateObject var viewModel: ContentViewModel
     @State var place: Place
 
@@ -20,7 +21,7 @@ struct MapPlaceView: View {
                     Image(systemName: "drop.circle.fill")
                         .foregroundColor(.red)
                         .onTapGesture(count: 1) {
-                            print("You tapped me")
+                            self.logger.debug(message: "You tapped me")
                         }
                 }
             )

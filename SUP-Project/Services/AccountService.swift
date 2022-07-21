@@ -23,6 +23,7 @@ protocol AccountServicing {
 
 class AccountService {
     static let shared = AccountService()
+    let logger: Logging = Logger.shared
     var auth = Auth.auth()
 }
 
@@ -37,8 +38,8 @@ extension AccountService: AccountServicing {
         guard !isSignedIn else { throw Error.alreadySignedIn }
         
         let authData = try await auth.createUser(withEmail: email, password: password)
-        print("auth data: \(authData)")
-        print("user: \(authData.user)")
+        logger.debug(message: "auth data: \(authData)")
+        logger.debug(message: "user: \(authData.user)")
     }
     
     func signIn(email: String, password: String) async throws {
@@ -46,8 +47,8 @@ extension AccountService: AccountServicing {
         
         let authData = try await auth.signIn(withEmail: email, password: password)
         
-        print("auth data: \(authData)")
-        print("user: \(authData.user)")
+        logger.debug(message: "auth data: \(authData)")
+        logger.debug(message: "user: \(authData.user)")
     }
     
     func signOut() async throws {

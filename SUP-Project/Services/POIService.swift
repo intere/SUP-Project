@@ -10,6 +10,7 @@ import Foundation
 
 class POIService: ObservableObject {
     let defaults: UserDefaults
+    let logger: Logging
 
     var placesOfInterest: [POI] {
         get {
@@ -23,7 +24,8 @@ class POIService: ObservableObject {
         }
     }
 
-    init(defaults: UserDefaults = .standard) {
+    init(defaults: UserDefaults = .standard, logger: Logging = Logger.shared) {
+        self.logger = logger
         self.defaults = defaults
     }
 
@@ -52,7 +54,7 @@ private extension POIService {
         do {
             return try Constants.encoder.encode(pois)
         } catch {
-#warning("TODO: log error")
+            logger.error(error: error)
             return nil
         }
     }
@@ -62,7 +64,7 @@ private extension POIService {
         do {
             return try Constants.decoder.decode([POI].self, from: data)
         } catch {
-            #warning("TODO: log error")
+            logger.error(error: error)
             return []
         }
     }

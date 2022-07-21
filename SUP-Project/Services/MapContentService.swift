@@ -8,17 +8,20 @@
 import Foundation
 
 class MapContentService {
+    private let logger: Logging = Logger.shared
     private let placesJsonUrl = Bundle.main.url(forResource: "places", withExtension: "json")
 
     lazy var places: [Place] = {
         guard let placesJsonUrl = placesJsonUrl else {
-            fatalError("Failed to find places.json")
+            logger.fatal(message: "Failed to find places.json")
+            return []
         }
         do {
             let jsonData = try Data(contentsOf: placesJsonUrl)
             return try JSONDecoder().decode([Place].self, from: jsonData)
         } catch {
-            fatalError(error.localizedDescription)
+            logger.fatal(error: error)
+            return []
         }
     }()
 }

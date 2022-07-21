@@ -33,6 +33,7 @@ class PlacesListViewModel: ObservableObject {
 }
 
 struct PlacesListView: View {
+    let logger: Logging = Logger.shared
     var theme: Theme
     @StateObject var model: PlacesListViewModel
 
@@ -55,7 +56,7 @@ struct PlacesListView: View {
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
                     .onTapGesture {
-                        print("You tapped \(place.name)")
+                        self.logger.debug(message: "You tapped \(place.name)")
                         model.selectedPlace = place
                         model.showPlace = 1
                     }

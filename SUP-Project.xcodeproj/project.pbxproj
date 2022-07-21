@@ -26,6 +26,8 @@
 		36458D2A2882F2D6003ED4C6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 36458D292882F2D6003ED4C6 /* FirebaseStorageCombine-Community */; };
 		36458D2C2882F603003ED4C6 /* PlacesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36458D2B2882F603003ED4C6 /* PlacesDatabase.swift */; };
 		36458D2E2882F66D003ED4C6 /* PlacesDatabaesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36458D2D2882F66D003ED4C6 /* PlacesDatabaesTest.swift */; };
+		36458D4F28883A94003ED4C6 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36458D4E28883A94003ED4C6 /* Logging.swift */; };
+		36458D53288994C4003ED4C6 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36458D52288994C4003ED4C6 /* Dependencies.swift */; };
 		36514D542871E6A60076B7FA /* MapContentServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D532871E6A60076B7FA /* MapContentServiceTests.swift */; };
 		36514D572871E9440076B7FA /* PlacesNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D562871E9440076B7FA /* PlacesNavigationView.swift */; };
 		36514D592871EA400076B7FA /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514D582871EA400076B7FA /* PlacesView.swift */; };
@@ -78,6 +80,9 @@
 		36458D182882F0EF003ED4C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36458D2B2882F603003ED4C6 /* PlacesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDatabase.swift; sourceTree = "<group>"; };
 		36458D2D2882F66D003ED4C6 /* PlacesDatabaesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDatabaesTest.swift; sourceTree = "<group>"; };
+		36458D4E28883A94003ED4C6 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		36458D512888550F003ED4C6 /* SUP-Project-Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SUP-Project-Bridging.h"; sourceTree = "<group>"; };
+		36458D52288994C4003ED4C6 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		36514D532871E6A60076B7FA /* MapContentServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentServiceTests.swift; sourceTree = "<group>"; };
 		36514D562871E9440076B7FA /* PlacesNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNavigationView.swift; sourceTree = "<group>"; };
 		36514D582871EA400076B7FA /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
@@ -93,7 +98,6 @@
 		3675E1192870A197000F6C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3675E11F2870A197000F6C96 /* SUP-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E1232870A197000F6C96 /* SUP_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP_ProjectTests.swift; sourceTree = "<group>"; };
-		3675E1292870A197000F6C96 /* SUP-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUP-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675E13C2870A570000F6C96 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3675E13E2871E156000F6C96 /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		3675E1422871E3BD000F6C96 /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 				3675E1122870A195000F6C96 /* SUP_ProjectApp.swift */,
 				3675E1162870A196000F6C96 /* Assets.xcassets */,
 				3675E1182870A197000F6C96 /* Preview Content */,
+				36458D512888550F003ED4C6 /* SUP-Project-Bridging.h */,
 			);
 			path = "SUP-Project";
 			sourceTree = "<group>";
@@ -247,6 +252,8 @@
 				36A5636E287DABC100E24D83 /* POIService.swift */,
 				36458D2B2882F603003ED4C6 /* PlacesDatabase.swift */,
 				360677C92884DCEE003D7175 /* AccountService.swift */,
+				36458D4E28883A94003ED4C6 /* Logging.swift */,
+				36458D52288994C4003ED4C6 /* Dependencies.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,6 +299,7 @@
 				3675E10B2870A195000F6C96 /* Sources */,
 				3675E10C2870A195000F6C96 /* Frameworks */,
 				3675E10D2870A195000F6C96 /* Resources */,
+				36458D5028885436003ED4C6 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -394,6 +402,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36458D5028885436003ED4C6 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3675E10B2870A195000F6C96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -411,11 +442,13 @@
 				3675E1452871E548000F6C96 /* MapContentService.swift in Sources */,
 				36A563672878B3B200E24D83 /* ColorExtensions.swift in Sources */,
 				36514D572871E9440076B7FA /* PlacesNavigationView.swift in Sources */,
+				36458D4F28883A94003ED4C6 /* Logging.swift in Sources */,
 				36514D5F2871EBEA0076B7FA /* TitleView.swift in Sources */,
 				3675E13D2870A570000F6C96 /* Place.swift in Sources */,
 				36514D6428720B010076B7FA /* PlaceImage.swift in Sources */,
 				3604779928804F5300A70CA7 /* CommonImageButton.swift in Sources */,
 				3675E1152870A195000F6C96 /* MapDialogView.swift in Sources */,
+				36458D53288994C4003ED4C6 /* Dependencies.swift in Sources */,
 				3675E1132870A195000F6C96 /* SUP_ProjectApp.swift in Sources */,
 				36E47B562874E11F0094094C /* AllowedView.swift in Sources */,
 				36AB94CD2877BCFA005F39FE /* MapChooser.swift in Sources */,
@@ -440,13 +473,6 @@
 				36514D542871E6A60076B7FA /* MapContentServiceTests.swift in Sources */,
 				3675E1432871E3BD000F6C96 /* PlaceTests.swift in Sources */,
 				360677CE2884E100003D7175 /* AccountServiceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3675E1252870A197000F6C96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,9 +624,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SUP-Project/SUP-Project-Bridging.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -629,9 +657,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icolasoft.SUP-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SUP-Project/SUP-Project-Bridging.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
