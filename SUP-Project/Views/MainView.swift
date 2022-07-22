@@ -7,16 +7,22 @@
 
 import SwiftUI
 
+struct MainViewModel {
+    let dependencies: Dependencies
+    var theme: Theme { dependencies.theme }
+    var places: [Place] { dependencies.mapContentProvider.places }
+}
+
 struct MainView: View {
-    let theme: Theme
+    let model: MainViewModel
 
     var body: some View {
         TabView {
-            PlacesNavigationView(places: MapContentService().places)
+            PlacesNavigationView(places: model.places)
                 .tabItem {
                     Label("Spots", image: "PlaceList")
                 }
-            POIListView(theme: theme)
+            POIListView(theme: model.theme)
                 .tabItem {
                     Label("POIs", image: "POIList")
                 }
@@ -27,6 +33,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(theme: .init())
+        MainView(model: .init(dependencies: .init()))
     }
 }

@@ -10,12 +10,23 @@ import FirebaseAuth
 import Foundation
 
 
-protocol AccountServicing {
+protocol AccountProviding {
+    /// Is a user currently signed in?
     var isSignedIn: Bool { get }
-    
+
+    /// Create an account using email and password.
+    /// - Parameters:
+    ///   - email: The email of the account to create.
+    ///   - password: The password of the account to create
     func createAccount(email: String, password: String) async throws
+
+    /// Sign in to an account using an email and password
+    /// - Parameters:
+    ///   - email: The email of the user.
+    ///   - password: The password for the user
     func signIn(email: String, password: String) async throws
-    
+
+    /// Sign out the current user
     func signOut() async throws
 }
 
@@ -29,7 +40,7 @@ class AccountService {
 
 // MARK: - AccountService: AccountServicing
 
-extension AccountService: AccountServicing {
+extension AccountService: AccountProviding {
     
     var isSignedIn: Bool { auth.currentUser != nil }
     

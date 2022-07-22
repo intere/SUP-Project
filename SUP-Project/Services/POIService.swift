@@ -8,9 +8,31 @@
 import Combine
 import Foundation
 
+protocol POIProviding {
+    var placesOfInterest: [POI] { get }
+    func add(poi: POI)
+    func remove(poi: POI)
+}
+
 class POIService: ObservableObject {
     let defaults: UserDefaults
     let logger: Logging
+
+    init(defaults: UserDefaults = .standard, logger: Logging = Logger.shared) {
+        self.logger = logger
+        self.defaults = defaults
+    }
+
+    struct Constants {
+        static let defaultsKey = "my.places.of.interest"
+        static let encoder = JSONEncoder()
+        static let decoder = JSONDecoder()
+    }
+}
+
+// MARK: - POIProviding
+
+extension POIService: POIProviding {
 
     var placesOfInterest: [POI] {
         get {
@@ -24,11 +46,6 @@ class POIService: ObservableObject {
         }
     }
 
-    init(defaults: UserDefaults = .standard, logger: Logging = Logger.shared) {
-        self.logger = logger
-        self.defaults = defaults
-    }
-
     func add(poi: POI) {
         placesOfInterest.append(poi)
         objectWillChange.send()
@@ -38,12 +55,6 @@ class POIService: ObservableObject {
         guard let index = placesOfInterest.firstIndex(where: { $0.uuid == poi.uuid }) else { return }
         placesOfInterest.remove(at: index)
         objectWillChange.send()
-    }
-
-    struct Constants {
-        static let defaultsKey = "my.places.of.interest"
-        static let encoder = JSONEncoder()
-        static let decoder = JSONDecoder()
     }
 }
 

@@ -52,7 +52,7 @@ struct PlaceImage: View {
             if model.emptyViewForMissing {
                 EmptyView()
             } else {
-                Image(systemName: "x.square")
+                Image("missing-photo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: model.maxWidth, maxHeight: model.maxHeight)

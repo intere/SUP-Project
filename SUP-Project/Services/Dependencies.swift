@@ -8,14 +8,23 @@
 import Foundation
 
 class Dependencies {
-    var theme: Theme
-    var logger: Logging
+    let theme: Theme
+    let logger: Logging
+    let mapContentProvider: MapContentProviding
+    let poiProvider: POIProviding
+    let accountProvider: AccountProviding
 
     init(
         theme: Theme = Theme(),
-        logger: Logging = Logger.shared
+        logger: Logging = Logger.shared,
+        mapContentProvider: MapContentProviding = MapContentService(),
+        poiProvider: POIProviding = POIService(),
+        accountProvider: AccountProviding = AccountService.shared
     ) {
         self.theme = theme
         self.logger = logger
+        self.mapContentProvider = mapContentProvider
+        self.poiProvider = poiProvider
+        self.accountProvider = accountProvider
     }
 }

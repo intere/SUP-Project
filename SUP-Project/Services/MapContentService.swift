@@ -7,8 +7,12 @@
 
 import Foundation
 
-class MapContentService {
-    private let logger: Logging = Logger.shared
+protocol MapContentProviding {
+    var places: [Place] { get }
+}
+
+class MapContentService: MapContentProviding {
+    private let logger: Logging
     private let placesJsonUrl = Bundle.main.url(forResource: "places", withExtension: "json")
 
     lazy var places: [Place] = {
@@ -24,4 +28,8 @@ class MapContentService {
             return []
         }
     }()
+
+    init(logger: Logging = Logger.shared) {
+        self.logger = logger
+    }
 }

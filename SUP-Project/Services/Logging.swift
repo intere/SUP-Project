@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - Logging
+
 protocol Logging {
     func log(_ message: LogMessage)
 }
@@ -62,6 +64,8 @@ extension Logging {
     }
 }
 
+// MARK: - Logger
+
 class Logger: Logging {
     static let shared = Logger()
     private var appenders: [LogAppender] = []
@@ -98,6 +102,8 @@ extension Error {
         return "\(self)"
     }
 }
+
+// MARK: - LogLevel
 
 enum LogLevel {
     case trace
@@ -153,6 +159,8 @@ func >(left: LogLevel, right: LogLevel) -> Bool { left.sortValue > right.sortVal
 func >=(left: LogLevel, right: LogLevel) -> Bool { left.sortValue >= right.sortValue }
 func ==(left: LogLevel, right: LogLevel) -> Bool { left.sortValue == right.sortValue }
 
+// MARK: - LogMessage
+
 struct LogMessage {
     let level: LogLevel
     let date: Date
@@ -164,15 +172,19 @@ struct LogMessage {
     var shortFile: String { URL(fileURLWithPath: file).lastPathComponent }
 }
 
+// MARK: - LogAppender
+
 protocol LogAppender {
     func log(message: LogMessage)
 }
+
+// MARK: - StdOutAppender
 
 struct StdOutAppender: LogAppender {
 
     func log(message: LogMessage) {
         let dateString = Constants.dateFormatter.string(from: message.date)
-        print("[\(dateString)][\(message.level.string)][\(message.shortFile)#\(message.line)(\(message.function)]: \(message.message)")
+        print("\(dateString)[\(message.level.string)][\(message.shortFile):\(message.line):\(message.function)]: \(message.message)")
     }
 
     struct Constants {
