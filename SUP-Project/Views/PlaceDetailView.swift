@@ -39,9 +39,10 @@ struct PlaceDetailView: View {
 
 
 struct DetailView_Previews: PreviewProvider {
+    static let dependencies = Dependencies()
     static var previews: some View {
         Group {
-            PlaceDetailView(theme: .init(), location: MapContentService().places[1])
+            PlaceDetailView(theme: .init(), location: dependencies.mapContentProvider.places[1])
         }.padding()
     }
 }

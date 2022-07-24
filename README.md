@@ -9,6 +9,10 @@
     - [x] Requires hiking
     - [x] Links to external references
     - [x] Weather Links
+    - [ ] Elevation
+    - [ ] Tidal notes (Rivers, etc)
+    - [ ] Conditions
+    - [ ] Water Level
 * POI
     - [x] UserDefaults Persistence
     - [x] Ability to add one

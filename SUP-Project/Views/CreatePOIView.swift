@@ -12,8 +12,9 @@ import SwiftUI
 
 struct CreatePOIView: View {
     @Environment(\.dismiss) var dismiss
-    let theme: Theme
     @ObservedObject var model: CreatePOIViewModel
+
+    var theme: Theme { model.dependencies.theme }
 
     var body: some View {
         VStack {
@@ -75,14 +76,15 @@ struct CreatePOIView: View {
 
 struct CreatePOIView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePOIView(theme: .init(), model: .init(poiService: .init()))
+        CreatePOIView(model: .init(dependencies: .init()))
     }
 }
 
 // MARK: - CreatePOIViewModel
 
 class CreatePOIViewModel: NSObject, ObservableObject {
-    let poiService: POIService
+    let dependencies: Dependencies
+    var poiProvider: POIProviding { dependencies.poiProvider }
     var locationManager: CLLocationManager?
     @Published var isFetchingLocation = true
     @Published var name: String = "My Spot" {
@@ -112,8 +114,8 @@ class CreatePOIViewModel: NSObject, ObservableObject {
         return POI(uuid: .init(), name: name, lat: location.coordinate.latitude, lon: location.coordinate.longitude, type: type)
     }
 
-    init(poiService: POIService) {
-        self.poiService = poiService
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
         super.init()
         initializeLocationServices()
     }
@@ -122,7 +124,7 @@ class CreatePOIViewModel: NSObject, ObservableObject {
         guard let poi = poi else {
             return
         }
-        poiService.add(poi: poi)
+        poiProvider.add(poi: poi)
     }
 
     private func updateAnnotations() {

@@ -31,8 +31,9 @@ struct PlacesNavigationView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let dependencies = Dependencies()
     static var previews: some View {
-        PlacesNavigationView(places: MapContentService().places).preferredColorScheme(.light)
-        PlacesNavigationView(places: MapContentService().places).preferredColorScheme(.dark)
+        PlacesNavigationView(places: dependencies.mapContentProvider.places).preferredColorScheme(.light)
+        PlacesNavigationView(places: dependencies.mapContentProvider.places).preferredColorScheme(.dark)
     }
 }

@@ -34,8 +34,10 @@ struct MapPlaceView: View {
 
 
 struct MapPlaceView_Previews: PreviewProvider {
+    static let dependencies = Dependencies()
+
     static var previews: some View {
-        MapPlaceView(viewModel: .init(), place: MapContentService().places[0])
+        MapPlaceView(viewModel: .init(), place: dependencies.mapContentProvider.places[0])
     }
 }
 

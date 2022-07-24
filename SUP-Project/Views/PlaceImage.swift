@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PlaceImageModel {
+    let logger: Logging = Logger.shared
     let place: Place
     let rotation: Bool
     let maxWidth: CGFloat?
@@ -78,7 +79,17 @@ struct PlaceImage: View {
                         .padding(.top)
                         .rotationEffect(angle, anchor: .center)
                 } else if let error = phase.error {
-                    Text("ERROR with image: \(error.localizedDescription)")
+                    Image("error-photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: model.maxWidth, maxHeight: model.maxHeight)
+                        .padding(4)
+                        .background(Color.white)
+                        .border(model.borderColor, width: model.borderWidth)
+                        .shadow(radius: 30)
+                        .padding(.top)
+                        .rotationEffect(angle, anchor: .center)
+                        .foregroundColor(.black)
                 } else {
                     ProgressView()
                 }
@@ -88,7 +99,9 @@ struct PlaceImage: View {
 }
 
 struct PlaceImage_Previews: PreviewProvider {
+    static let dependencies = Dependencies()
+
     static var previews: some View {
-        PlaceImage(model: .init(place: MapContentService().places[0], rotation: true))
+        PlaceImage(model: .init(place: dependencies.mapContentProvider.places[0], rotation: true))
     }
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct POIListView: View {
-    let theme: Theme
-    @ObservedObject var model = POIListViewModel()
+    @ObservedObject var model: POIListViewModel
+    var theme: Theme { model.dependencies.theme }
 
     var body: some View {
         VStack {
@@ -20,7 +20,7 @@ struct POIListView: View {
             }
             .buttonStyle(CommonButtonStyle.primary)
             .sheet(isPresented: $model.showingSheet) {
-                CreatePOIView(theme: theme, model: .init(poiService: model.poiService))
+                CreatePOIView(model: .init(dependencies: model.dependencies))
             }
             .padding()
 
@@ -54,17 +54,23 @@ struct POIListView: View {
 
 struct POIListView_Previews: PreviewProvider {
     static var previews: some View {
-        POIListView(theme: .init())
+        POIListView(model: .init(dependencies: .init()))
     }
 }
 
 class POIListViewModel: ObservableObject {
-    @Published var poiService = POIService()
+    let dependencies: Dependencies
+    @Published var poiProvider: POIProviding
     @Published var showingSheet = false
-    var pois: [POI] { poiService.placesOfInterest }
+    var pois: [POI] { poiProvider.placesOfInterest }
+
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
+        self.poiProvider = dependencies.poiProvider
+    }
 
     func remove(_ poi: POI) {
-        poiService.remove(poi: poi)
+        poiProvider.remove(poi: poi)
         objectWillChange.send()
     }
 }

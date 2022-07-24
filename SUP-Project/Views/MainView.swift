@@ -22,7 +22,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Spots", image: "PlaceList")
                 }
-            POIListView(theme: model.theme)
+            POIListView(model: .init(dependencies: model.dependencies))
                 .tabItem {
                     Label("POIs", image: "POIList")
                 }

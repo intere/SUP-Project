@@ -69,12 +69,12 @@ struct PlacesListView: View {
 
 struct PlacesList_Previews: PreviewProvider {
     static var model = PreviewModel()
-    static var theme = Theme()
+    static let dependencies = Dependencies()
 
     static var previews: some View {
         Group {
-            PlacesListView(theme: .init(), model: model.viewModel).preferredColorScheme(.dark)
-            PlacesListView(theme: .init(), model: model.viewModel).preferredColorScheme(.light)
+            PlacesListView(theme: dependencies.theme, model: model.viewModel).preferredColorScheme(.dark)
+            PlacesListView(theme: dependencies.theme, model: model.viewModel).preferredColorScheme(.light)
         }
     }
 
@@ -83,7 +83,7 @@ struct PlacesList_Previews: PreviewProvider {
         var places: [Place]
         @State var selectedPlace: Place
 
-        init(places: [Place] = MapContentService().places) {
+        init(places: [Place] = PlacesList_Previews.dependencies.mapContentProvider.places) {
             self.places = places
             self.selectedPlace = places[0]
             self.viewModel = PlacesListViewModel(searchText: "", places: model.places, selectedPlace: model.selectedPlace)

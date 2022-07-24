@@ -79,28 +79,29 @@ struct AllowedView: View {
 }
 
 struct AllowedView_Previews: PreviewProvider {
-    private static let theme = Theme()
+    private static let dependencies = Dependencies()
+
     static var previews: some View {
         VStack(spacing: 40) {
-            AllowedView(theme: theme, place: MapContentService().places[3])
+            AllowedView(theme: dependencies.theme, place: dependencies.mapContentProvider.places[3])
                 .preferredColorScheme(.dark)
                 .padding()
-            DisallowedView(theme: theme, place: MapContentService().places[1])
+            DisallowedView(theme: dependencies.theme, place: dependencies.mapContentProvider.places[1])
                 .preferredColorScheme(.dark)
                 .padding()
         }
-        .background(theme.appBackground)
+        .background(dependencies.theme.appBackground)
         .padding()
 
         VStack {
-            AllowedView(theme: theme, place: MapContentService().places[3])
+            AllowedView(theme: dependencies.theme, place: dependencies.mapContentProvider.places[3])
                 .preferredColorScheme(.light)
                 .padding()
-            DisallowedView(theme: theme, place: MapContentService().places[1])
+            DisallowedView(theme: dependencies.theme, place: dependencies.mapContentProvider.places[1])
                 .preferredColorScheme(.light)
                 .padding()
         }
-        .background(theme.appBackground)
+        .background(dependencies.theme.appBackground)
         .padding()
     }
 }

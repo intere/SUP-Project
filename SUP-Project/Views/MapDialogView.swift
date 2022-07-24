@@ -37,7 +37,8 @@ struct MapDialogView: View {
 }
 
 struct MapView_Previews: PreviewProvider {
+    static let dependencies = Dependencies()
     static var previews: some View {
-        MapDialogView(place: MapContentService().places[0])
+        MapDialogView(place: dependencies.mapContentProvider.places[0])
     }
 }

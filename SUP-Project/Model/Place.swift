@@ -34,6 +34,8 @@ enum WaterBodyType: String, Codable {
     case river = "r"
     case whitewater = "w"
     case reservoir = "e"
+    case ocean = "o"
+    case sea = "s"
 }
 
 class Place: Codable {
